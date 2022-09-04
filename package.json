@@ -14,7 +14,7 @@
     "swiper": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://meerakanata.github.io",
+  "homepage": "https://meerakanata.github.io/my-portfolio",
   "scripts": {
     "start": "./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "./node_modules/react-scripts/bin/react-scripts.js build",
