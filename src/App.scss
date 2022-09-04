@@ -1,0 +1,940 @@
+//************** MIXINS **************
+@mixin fr {
+    display: flex;
+    flex-direction: row;
+}
+@mixin fc {
+    display: flex;
+    flex-direction: column;
+}
+@mixin cc {
+    justify-content: center;
+    align-items: center;
+}
+
+//************** VARIABLES ***********
+
+$color-01: #E3A164;
+$color-02: #F0D3F7;
+$color-03: #28052b;
+$color-04: #A57982;
+$color-05: #FFFFFF;
+
+$font-01:'Jost', sans-serif;
+
+//********** MAIN STYLING STARTS ******
+html {
+	scroll-behavior: smooth;
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+#root{
+    @include fc;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: $color-03;
+    color: $color-02;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .swiper{
+        padding-bottom: 70px;
+        .SF_Slide, .JC_Slide, .Home_Slide{
+            width: 100%;
+        }
+        .swiper-wrapper{
+            width: 80%;
+            margin-left: -10%;
+        }
+        --swiper-theme-color: $color-01;
+        div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: 40px;
+        }
+        .swiper-pagination-bullet {
+            background: $color-02;
+        }
+        .swiper-pagination-bullet-active {
+            background: $color-01;
+        }
+        .viewCaseButton{
+            position: absolute;
+            bottom: 13%;
+            right: 4%;
+        }
+        .viewCaseButton:hover{
+            rect, #pathL{
+                stroke: $color-01;
+            }
+            #pathM{
+                fill:$color-01;
+            }
+
+        }
+        .viewCaseButton:active{
+            fill:$color-01;
+            rect{
+                stroke: $color-01;
+                fill:$color-01;
+            }
+            #pathL{
+                stroke: $color-03;
+            }
+            #pathM{
+                fill: $color-03;
+                
+            }
+        }
+    }
+
+}
+::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-track{
+    background: $color-03;
+}
+::-webkit-scrollbar-thumb{
+    background: $color-02;
+    border-radius: 100vw;
+    border: $color-03 solid 4px;
+
+}
+.App{
+    @include fc;
+    position: relative;
+    @include cc;
+    margin-right: 100px;
+    margin-left: 100px;
+    .contactBar{
+        @include fr;
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 76px;
+        font-family: $font-01;
+        line-height: 1.4em;
+        color: $color-04;
+        background-color: $color-03;
+        z-index: 2000;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        a{
+            display: flex;
+            text-decoration: none;
+            color: $color-02;
+            font-weight: 300;
+        }
+        a.contactBar__email:hover{
+            color:  $color-01;
+        }
+
+    }
+    .contactBar__emailMobile{
+        display: none;
+    }
+    .contactBar__child{
+        margin-left: 30px;
+    }
+    .contactBar__dnldButton{
+        margin-left: 100px;
+        padding-right: 100px;
+    }
+    .contactBar__dnldButton:hover{
+        #pathC, #pathB {
+            fill: $color-01;
+        }
+        rect, #pathD{
+            stroke: $color-01;   
+        }
+    }
+    .contactBar__dnldButton:active{
+
+        path#pathB {
+            fill: $color-03;
+        }
+        path#pathC{
+            fill: $color-03;
+        }
+        path#pathD{
+            stroke: $color-03;
+        }
+        rect{
+            fill: $color-01;
+            stroke: $color-01;
+
+        }
+    }
+    .home{
+        @include fc;
+        @include cc;
+        width: 100%;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        .mySwiper{
+            display: flex;
+        }
+        .mySwiperMobile{
+            display: none;
+        }
+        .about{
+            @include fr;
+            @include cc;
+            width: 100%;
+            height: 450px;
+            margin-top: 150px;
+            margin-bottom: 80px;
+        }
+        .about__columnA{
+            @include fc;
+            justify-content: flex-start;
+            align-items: flex-start;
+            #headshot{
+                display: flex;
+            }
+            img{
+                height: 260px;
+                border-radius: 80px;
+            }
+        }
+        .about__columnB{
+            @include fc;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 60px;
+            height: 300px;
+
+            h4{
+                font-family: $font-01;
+                line-height: 1.4em;
+                color: $color-04;
+                font-weight: 300;
+            }
+            #headshot2{
+                display: none;
+            }
+        }
+        .about__columnA-Title, .about__columnB-Title{
+            font-family: $font-01;
+            font-weight: 400;
+            color: $color-02;
+            font-size: 36px;
+        }
+        .about__columnA-Title{
+            display: none;
+        }
+        .carouselContainer{
+            @include fr;
+            justify-content: flex-start;
+            max-width: 1024px;
+            width: 80vw;
+           
+        }
+        .testimonials{
+            @include fr;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+        .testimonials__column{
+            @include fc;
+            width: 45%;
+            margin-bottom: 3vh;
+            h4{
+                display: flex;
+                font-family: $font-01;
+                line-height: 1.4em;
+                color: $color-04;
+                text-align: justify;
+                margin: 0;
+                font-weight: 300;
+            }
+        }
+        .testimonials__column-source{
+            @include fc;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-family: $font-01;
+            font-size: 14px;
+            color: $color-02;
+            padding-top: 30px;
+            width: 100%;
+            font-weight: 300;
+            p{
+                margin: 0;
+                flex-wrap: wrap;
+                text-align: right;
+                width: 90%;
+            }
+        }
+    }
+    .caseStudy{
+        @include fc;
+        padding-top: 75px;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        span{
+            color: $color-01;
+        }
+    }
+    .caseStudy__nav{
+        @include fr;
+        justify-content: space-between;
+        align-items: center;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        a:visited{
+            path#pathE{
+                stroke: $color-02;
+            }
+            path#pathF{
+                fill: $color-02;
+            }
+        }
+        a{
+            display: flex;
+            font-family: $font-01;
+            color: $color-02;
+            font-size: 16px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        a:hover{
+            path#pathE{
+                stroke: $color-01;
+            }
+            path#pathF{
+                fill: $color-01;
+            }
+        }
+    }
+    .caseStudy__detail{
+        @include fc;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        h4{
+            font-family: $font-01;
+            line-height: 1.4em;
+            color: $color-04;
+            text-align: left;
+        }
+        .mySwiper{
+            display: flex;
+        }
+        .mySwiperMobile{
+            display: none;
+        }
+        #flowDiagram{
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+        }
+        #flowDiagram_mobile{
+            display: none;
+        }
+        video {
+            border-radius: 40px;
+            background-color: $color-05;
+            margin-top: -40px;
+            margin-bottom: 50px;
+        }
+    }
+    .caseStudy__detail>img{
+        width: 100%;
+        margin-top: -40px;
+        margin-bottom: 50px;
+    }
+    .caseStudy__detail-name{
+        display: flex;
+        font-family: $font-01;
+        color: $color-02;
+        font-size: 36px;
+        margin-bottom: 2.7%;
+        font-weight: 400;
+    }    
+    .caseStudy__detail-heading{
+        display: flex;
+        font-family: $font-01;
+        color: $color-02;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .descriptionBox{
+        margin-bottom: 21px;
+    }
+    .caseStudy__detail-body{
+        display: flex;
+        font-family: $font-01;
+        color: $color-04;
+        font-size: 16px;
+        margin-bottom: 50px;
+
+        a{
+            text-decoration: none;
+            font-family: $font-01;
+            font-size: 16px;
+            color: $color-04;
+            display:inline;
+            font-weight: 300;
+        }
+        a:hover{
+            color:$color-01;
+        }
+        .jaySiteLink{
+            color: $color-02;
+        }
+        ul{
+            margin: 0;
+        }
+        #indent{
+            display: flex;
+            padding-left: 4%;
+        }
+        h4{
+            margin: 0;
+            font-weight: 300;
+            ul>p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    div.caseStudy__detail > div:nth-child(13) > h4 > p.quote{
+        width: 80%;
+        padding: 0 10%;
+        a{
+            color: $color-04;
+        }
+        a.testimonials__column-source{
+            display:flex;
+            justify-content: flex-end;
+            font-family: $font-01;
+            font-size: 14px;
+            color: $color-05;
+            padding-top: 30px;
+            width: 100%;
+        }
+    }
+    .caseStudy__detail-splash{
+        @include fr;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 3.4%;
+        .imgContainer{
+            @include fc;
+            justify-content: flex-start;
+            align-items: flex-end;
+            display: flex;
+            max-width: 879px;
+            width: 67%;
+            margin-bottom: 20px;
+            img{
+                display: flex;
+                width: 100%;
+            }
+            #jc_splash_desktop, #sf_splash_desktop, #c150_splash_desktop, #mcds_splash_desktop{
+                display: flex;
+            }
+            #jc_splash_mobile, #sf_splash_mobile, #c150_splash_mobile, #mcds_splash_mobile{
+                display: none;
+            }
+            .imageCaption{
+                @include fr;
+                justify-content: flex-end;
+                font-family: $font-01;
+                font-size: 12px;
+                color: $color-04;
+                padding: 1%;
+                .livSiteLink{
+                    color: $color-02;
+                }
+            }
+        }
+
+        .vitalInfo{
+            display: flex;
+            width: 33%;
+            font-family: $font-01;
+            font-size: 16px;
+            color:$color-01;
+            font-weight: 300;
+            line-height: 150%;
+        }
+    }
+    .caseStudy__detail-flow{
+        position: relative;
+        img{
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: 1182px;
+            width: 100%;
+            z-index: 1000;
+            margin-bottom: 60px;
+        }
+        #c150_splash_desktop{
+            display: flex;
+        }
+        #c150_splash_mobile{
+            display: none;
+        }
+        .siteImgContainer{
+            @include fr;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            bottom: 6%;
+            left: 4%;
+            img{
+                width: 30%;
+                margin-bottom: 2%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+
+    .footer{
+        @include fr;
+        justify-content: center;
+        font-family: $font-01;
+        font-size: 12px;
+        color: $color-05;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 873px) 
+and (min-width: 769px){
+    .App{
+        margin-left: 6vw;
+        margin-right: 6vw;
+        .home{
+            .about__columnA{
+                #headshot{
+                    display: none;
+                }
+            }
+            .about__columnB{
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 0;
+                #headshot2{
+                    display: flex;
+                    width: 200px;
+                    border-radius: 60px;
+                    margin-right: 6%;
+                }
+            }
+            .about__columnB-Title{
+                width: 62%;
+            }
+            .carouselContainer{
+                width: 88vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) 
+and (min-width: 601px){
+    .App{
+        margin-left: 6vw;
+        margin-right: 6vw;
+        .contactBar{
+            justify-content: flex-end;
+            padding-right: 6%;
+            margin-left: 6%;
+            #LinkedInIcon{
+                padding-right: 8%;
+            }
+        }
+        a.contactBar__email{
+            display: none;
+        }
+        .contactBar__emailMobile{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__dnldButton{
+            margin-left: 0;
+            padding-right: 0;
+        }
+        .contactBar__child{
+            margin-left: 0;
+        }
+        .home{
+            .about__columnA{
+                #headshot{
+                    display: none;
+                }
+            }
+            .about__columnB{
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 0;
+                #headshot2{
+                    display: flex;
+                    width: 200px;
+                    border-radius: 60px;
+                    margin-right: 6%;
+                }
+            }
+            .about__columnB-Title{
+                width: 50%;
+            }
+            .carouselContainer{
+                width: 88vw;
+            }
+        }
+        .caseStudy{
+            .caseStudy__detail-splash{
+                .vitalInfo{
+                    ul{
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 600px) 
+and (min-width: 451px){
+    #root{
+        .swiper{
+            width: 100%;
+            .viewCaseButton{
+                position: absolute;
+                bottom: 6%;
+                right: 10%;
+            }        
+            .swiper-slide{
+            width: 80%;
+            }
+        }
+
+    }
+    .App{
+        margin-left: 8%;
+        margin-right: 8%;
+        .home{
+            .mySwiper{
+                display: none;
+            }
+            .mySwiperMobile{
+                display: flex;
+            }
+            .about{
+                margin-top: 180px;
+                flex-direction: column;
+                height: 720px;
+                margin-bottom: 80px;
+            }
+            .about__columnA{
+                align-items: center;
+                #headshot{
+                    display: flex;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            .about__columnA-Title{
+                display: flex;
+            }
+            .about__columnB{
+                margin-left: 0;
+                #headshot2{
+                    display: none;
+                }
+                h4{
+                    margin-bottom: 0;
+                }
+            }
+            .about__columnB-Title{
+                display: none;
+            }
+            .testimonials{
+                margin-top: 40px;
+                height: auto;
+            }
+            .testimonials__column{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+        .contactBar{
+            justify-content: flex-end;
+            padding-right: 5%;
+            margin-left: 5%;
+            #LinkedInIcon{
+                padding-right: 8%;
+            }
+        }
+        a.contactBar__email{
+            display: none;
+        }
+        .contactBar__emailMobile{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__child{
+            margin-left: 0;
+        }
+        .contactBar__dnldButton{
+            margin-left: 0;
+            padding-right: 0;
+        }
+        .caseStudy__detail{
+            #flowDiagram{
+                display: none;
+            }
+            #flowDiagram_mobile{
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        .caseStudy__detail-name{
+            margin-bottom: 5%;
+        }
+        .caseStudy__detail-splash{
+            flex-direction: column;
+            .imgContainer{
+                width: 100%;
+            }
+            .vitalInfo{
+                width: 100%;
+                ul{
+                    padding-left: 0;
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 450px) 
+and (min-width: 0px){
+    #root{
+        .swiper{
+            width: 100%;
+            .viewCaseButton{
+                position: absolute;
+                bottom: 4%;
+                right: 10%;
+            }        
+            .swiper-slide{
+            width: 80%;
+            }
+        }
+
+    }
+    .App{
+        margin-right: 7%;
+        margin-left: 7%;
+        .contactBar{
+            justify-content: flex-end;
+            padding-right: 5%;
+            margin-left: 5%;
+            #LinkedInIcon{
+                padding-right: 8%;
+            }
+        }
+        a.contactBar__email{
+            display: none;
+        }
+        .contactBar__emailMobile{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__child{
+            margin-left: 0;
+        }
+        .contactBar__dnldButton{
+            margin-left: 0;
+            padding-right: 0;
+
+        }
+        .home{
+            .mySwiper{
+                display: none;
+            }
+            .mySwiperMobile{
+                display: flex;
+            }
+
+            .about{
+                margin-top: 180px;
+                flex-direction: column;
+                height: 720px;
+                margin-bottom: 80px;
+            }
+            .about__columnA{
+                align-items: center;
+                #headshot{
+                    display: flex;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            .about__columnA-Title{
+                display: flex;
+            }
+            .about__columnB{
+                margin-left: 0;
+                h4{
+                    margin-bottom: 0;
+                }
+                #headshot2{
+                    display: none;
+                }
+            }
+            .about__columnB-Title{
+                display: none;
+            }
+            .testimonials{
+                margin-top: 40px;
+                height: auto;
+            }
+            .testimonials__column{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+        // .caseStudy{
+
+        // }
+        .caseStudy__nav{
+            a:visited{
+                path#pathE{
+                    stroke: $color-02;
+                }
+                path#pathF{
+                    fill: $color-02;
+                }
+            }
+            a:hover{
+                path#pathE{
+                    stroke: $color-02;
+                }
+                path#pathF{
+                    fill: $color-02;
+                }
+            }
+            a:active{
+                path#pathE{
+                    stroke: $color-01;
+                }
+                path#pathF{
+                    fill: $color-01;
+                }
+            }
+        }
+
+        .caseStudy__detail{
+            .backToTop{
+                display: flex;
+                position: fixed;
+                bottom: 30px;
+                right: 20px;
+            }
+            .mySwiper{
+                display: none;
+            }
+            .mySwiperMobile{
+                display: flex;
+            }
+            #flowDiagram{
+                display: none;
+            }
+            #flowDiagram_mobile{
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .backToTop:active{
+                rect{
+                    fill: $color-01;
+                    stroke: $color-01;
+                }
+                #pathH{
+                    fill: $color-03;
+                }
+                #pathJ{
+                    stroke: $color-03;
+                }
+
+            }
+        }
+        .caseStudy__detail-splash{
+            flex-direction: column-reverse;
+            .imgContainer{
+                width: 100%;
+                #jc_splash_desktop, #sf_splash_desktop, #c150_splash_desktop, #mcds_splash_desktop {
+                    display: none;
+                }
+                #jc_splash_mobile, #sf_splash_mobile, #c150_splash_mobile, #mcds_splash_mobile {
+                    display: flex;
+                }
+            }
+            .vitalInfo{
+                width: 100%;
+                margin-bottom: 30px;
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+        .caseStudy__detail-body{
+            ul{
+                padding-left: 0;
+                li{
+                    margin: 0% 0;
+                }
+            }
+        }
+        .caseStudy__detail-flow{
+            #c150_splash_desktop{
+                display: none;
+            }
+            #c150_splash_mobile{
+                display: flex;
+            }
+        }
+        .footer{
+            text-align: center;
+            width: 65%;
+        }
+
+    }
+}

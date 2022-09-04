@@ -1,0 +1,1230 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #28052b;
+  color: #F0D3F7;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#root .swiper {
+  padding-bottom: 70px;
+  --swiper-theme-color: $color-01;
+}
+
+#root .swiper .SF_Slide, #root .swiper .JC_Slide, #root .swiper .Home_Slide {
+  width: 100%;
+}
+
+#root .swiper .swiper-wrapper {
+  width: 80%;
+  margin-left: -10%;
+}
+
+#root .swiper div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 40px;
+}
+
+#root .swiper .swiper-pagination-bullet {
+  background: #F0D3F7;
+}
+
+#root .swiper .swiper-pagination-bullet-active {
+  background: #E3A164;
+}
+
+#root .swiper .viewCaseButton {
+  position: absolute;
+  bottom: 13%;
+  right: 4%;
+}
+
+#root .swiper .viewCaseButton:hover rect, #root .swiper .viewCaseButton:hover #pathL {
+  stroke: #E3A164;
+}
+
+#root .swiper .viewCaseButton:hover #pathM {
+  fill: #E3A164;
+}
+
+#root .swiper .viewCaseButton:active {
+  fill: #E3A164;
+}
+
+#root .swiper .viewCaseButton:active rect {
+  stroke: #E3A164;
+  fill: #E3A164;
+}
+
+#root .swiper .viewCaseButton:active #pathL {
+  stroke: #28052b;
+}
+
+#root .swiper .viewCaseButton:active #pathM {
+  fill: #28052b;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #28052b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F0D3F7;
+  border-radius: 100vw;
+  border: #28052b solid 4px;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.App .contactBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 76px;
+  font-family: "Jost", sans-serif;
+  line-height: 1.4em;
+  color: #A57982;
+  background-color: #28052b;
+  z-index: 2000;
+  -webkit-animation: fadeInAnimation ease 5s;
+          animation: fadeInAnimation ease 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .contactBar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #F0D3F7;
+  font-weight: 300;
+}
+
+.App .contactBar a.contactBar__email:hover {
+  color: #E3A164;
+}
+
+.App .contactBar__emailMobile {
+  display: none;
+}
+
+.App .contactBar__child {
+  margin-left: 30px;
+}
+
+.App .contactBar__dnldButton {
+  margin-left: 100px;
+  padding-right: 100px;
+}
+
+.App .contactBar__dnldButton:hover #pathC, .App .contactBar__dnldButton:hover #pathB {
+  fill: #E3A164;
+}
+
+.App .contactBar__dnldButton:hover rect, .App .contactBar__dnldButton:hover #pathD {
+  stroke: #E3A164;
+}
+
+.App .contactBar__dnldButton:active path#pathB {
+  fill: #28052b;
+}
+
+.App .contactBar__dnldButton:active path#pathC {
+  fill: #28052b;
+}
+
+.App .contactBar__dnldButton:active path#pathD {
+  stroke: #28052b;
+}
+
+.App .contactBar__dnldButton:active rect {
+  fill: #E3A164;
+  stroke: #E3A164;
+}
+
+.App .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-animation: fadeInAnimation ease 5s;
+          animation: fadeInAnimation ease 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .home .mySwiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .home .mySwiperMobile {
+  display: none;
+}
+
+.App .home .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 450px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.App .home .about__columnA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.App .home .about__columnA #headshot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .home .about__columnA img {
+  height: 260px;
+  border-radius: 80px;
+}
+
+.App .home .about__columnB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 60px;
+  height: 300px;
+}
+
+.App .home .about__columnB h4 {
+  font-family: "Jost", sans-serif;
+  line-height: 1.4em;
+  color: #A57982;
+  font-weight: 300;
+}
+
+.App .home .about__columnB #headshot2 {
+  display: none;
+}
+
+.App .home .about__columnA-Title, .App .home .about__columnB-Title {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #F0D3F7;
+  font-size: 36px;
+}
+
+.App .home .about__columnA-Title {
+  display: none;
+}
+
+.App .home .carouselContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 1024px;
+  width: 80vw;
+}
+
+.App .home .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.App .home .testimonials__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  margin-bottom: 3vh;
+}
+
+.App .home .testimonials__column h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  line-height: 1.4em;
+  color: #A57982;
+  text-align: justify;
+  margin: 0;
+  font-weight: 300;
+}
+
+.App .home .testimonials__column-source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #F0D3F7;
+  padding-top: 30px;
+  width: 100%;
+  font-weight: 300;
+}
+
+.App .home .testimonials__column-source p {
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: right;
+  width: 90%;
+}
+
+.App .caseStudy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 75px;
+  -webkit-animation: fadeInAnimation ease 5s;
+          animation: fadeInAnimation ease 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .caseStudy span {
+  color: #E3A164;
+}
+
+.App .caseStudy__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeInAnimation ease 5s;
+          animation: fadeInAnimation ease 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .caseStudy__nav a:visited path#pathE {
+  stroke: #F0D3F7;
+}
+
+.App .caseStudy__nav a:visited path#pathF {
+  fill: #F0D3F7;
+}
+
+.App .caseStudy__nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  color: #F0D3F7;
+  font-size: 16px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.App .caseStudy__nav a:hover path#pathE {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav a:hover path#pathF {
+  fill: #E3A164;
+}
+
+.App .caseStudy__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: fadeInAnimation ease 5s;
+          animation: fadeInAnimation ease 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .caseStudy__detail h4 {
+  font-family: "Jost", sans-serif;
+  line-height: 1.4em;
+  color: #A57982;
+  text-align: left;
+}
+
+.App .caseStudy__detail .mySwiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .caseStudy__detail .mySwiperMobile {
+  display: none;
+}
+
+.App .caseStudy__detail #flowDiagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.App .caseStudy__detail #flowDiagram_mobile {
+  display: none;
+}
+
+.App .caseStudy__detail video {
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.App .caseStudy__detail > img {
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.App .caseStudy__detail-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  color: #F0D3F7;
+  font-size: 36px;
+  margin-bottom: 2.7%;
+  font-weight: 400;
+}
+
+.App .caseStudy__detail-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  color: #F0D3F7;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.App .descriptionBox {
+  margin-bottom: 21px;
+}
+
+.App .caseStudy__detail-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  color: #A57982;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.App .caseStudy__detail-body a {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #A57982;
+  display: inline;
+  font-weight: 300;
+}
+
+.App .caseStudy__detail-body a:hover {
+  color: #E3A164;
+}
+
+.App .caseStudy__detail-body .jaySiteLink {
+  color: #F0D3F7;
+}
+
+.App .caseStudy__detail-body ul {
+  margin: 0;
+}
+
+.App .caseStudy__detail-body #indent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 4%;
+}
+
+.App .caseStudy__detail-body h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.App .caseStudy__detail-body h4 ul > p {
+  margin-bottom: 0;
+}
+
+.App div.caseStudy__detail > div:nth-child(13) > h4 > p.quote {
+  width: 80%;
+  padding: 0 10%;
+}
+
+.App div.caseStudy__detail > div:nth-child(13) > h4 > p.quote a {
+  color: #A57982;
+}
+
+.App div.caseStudy__detail > div:nth-child(13) > h4 > p.quote a.testimonials__column-source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.App .caseStudy__detail-splash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 3.4%;
+}
+
+.App .caseStudy__detail-splash .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: flex;
+  max-width: 879px;
+  width: 67%;
+  margin-bottom: 20px;
+}
+
+.App .caseStudy__detail-splash .imgContainer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.App .caseStudy__detail-splash .imgContainer #jc_splash_desktop, .App .caseStudy__detail-splash .imgContainer #sf_splash_desktop, .App .caseStudy__detail-splash .imgContainer #c150_splash_desktop, .App .caseStudy__detail-splash .imgContainer #mcds_splash_desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .caseStudy__detail-splash .imgContainer #jc_splash_mobile, .App .caseStudy__detail-splash .imgContainer #sf_splash_mobile, .App .caseStudy__detail-splash .imgContainer #c150_splash_mobile, .App .caseStudy__detail-splash .imgContainer #mcds_splash_mobile {
+  display: none;
+}
+
+.App .caseStudy__detail-splash .imgContainer .imageCaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: #A57982;
+  padding: 1%;
+}
+
+.App .caseStudy__detail-splash .imgContainer .imageCaption .livSiteLink {
+  color: #F0D3F7;
+}
+
+.App .caseStudy__detail-splash .vitalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #E3A164;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.App .caseStudy__detail-flow {
+  position: relative;
+}
+
+.App .caseStudy__detail-flow img {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 1182px;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 60px;
+}
+
+.App .caseStudy__detail-flow #c150_splash_desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .caseStudy__detail-flow #c150_splash_mobile {
+  display: none;
+}
+
+.App .caseStudy__detail-flow .siteImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+}
+
+.App .caseStudy__detail-flow .siteImgContainer img {
+  width: 30%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+}
+
+.App .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+@media (max-width: 873px) and (min-width: 769px) {
+  .App {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  .App .home .about__columnA #headshot {
+    display: none;
+  }
+  .App .home .about__columnB {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .App .home .about__columnB #headshot2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    border-radius: 60px;
+    margin-right: 6%;
+  }
+  .App .home .about__columnB-Title {
+    width: 62%;
+  }
+  .App .home .carouselContainer {
+    width: 88vw;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .App {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  .App .contactBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 6%;
+    margin-left: 6%;
+  }
+  .App .contactBar #LinkedInIcon {
+    padding-right: 8%;
+  }
+  .App a.contactBar__email {
+    display: none;
+  }
+  .App .contactBar__emailMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__dnldButton {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .App .contactBar__child {
+    margin-left: 0;
+  }
+  .App .home .about__columnA #headshot {
+    display: none;
+  }
+  .App .home .about__columnB {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .App .home .about__columnB #headshot2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    border-radius: 60px;
+    margin-right: 6%;
+  }
+  .App .home .about__columnB-Title {
+    width: 50%;
+  }
+  .App .home .carouselContainer {
+    width: 88vw;
+  }
+  .App .caseStudy .caseStudy__detail-splash .vitalInfo ul {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 451px) {
+  #root .swiper {
+    width: 100%;
+  }
+  #root .swiper .viewCaseButton {
+    position: absolute;
+    bottom: 6%;
+    right: 10%;
+  }
+  #root .swiper .swiper-slide {
+    width: 80%;
+  }
+  .App {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .App .home .mySwiper {
+    display: none;
+  }
+  .App .home .mySwiperMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .home .about {
+    margin-top: 180px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 720px;
+    margin-bottom: 80px;
+  }
+  .App .home .about__columnA {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .home .about__columnA #headshot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+  }
+  .App .home .about__columnA-Title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .home .about__columnB {
+    margin-left: 0;
+  }
+  .App .home .about__columnB #headshot2 {
+    display: none;
+  }
+  .App .home .about__columnB h4 {
+    margin-bottom: 0;
+  }
+  .App .home .about__columnB-Title {
+    display: none;
+  }
+  .App .home .testimonials {
+    margin-top: 40px;
+    height: auto;
+  }
+  .App .home .testimonials__column {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .App .contactBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 5%;
+    margin-left: 5%;
+  }
+  .App .contactBar #LinkedInIcon {
+    padding-right: 8%;
+  }
+  .App a.contactBar__email {
+    display: none;
+  }
+  .App .contactBar__emailMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__child {
+    margin-left: 0;
+  }
+  .App .contactBar__dnldButton {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .App .caseStudy__detail #flowDiagram {
+    display: none;
+  }
+  .App .caseStudy__detail #flowDiagram_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .App .caseStudy__detail-name {
+    margin-bottom: 5%;
+  }
+  .App .caseStudy__detail-splash {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .caseStudy__detail-splash .imgContainer {
+    width: 100%;
+  }
+  .App .caseStudy__detail-splash .vitalInfo {
+    width: 100%;
+  }
+  .App .caseStudy__detail-splash .vitalInfo ul {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 0px) {
+  #root .swiper {
+    width: 100%;
+  }
+  #root .swiper .viewCaseButton {
+    position: absolute;
+    bottom: 4%;
+    right: 10%;
+  }
+  #root .swiper .swiper-slide {
+    width: 80%;
+  }
+  .App {
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  .App .contactBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 5%;
+    margin-left: 5%;
+  }
+  .App .contactBar #LinkedInIcon {
+    padding-right: 8%;
+  }
+  .App a.contactBar__email {
+    display: none;
+  }
+  .App .contactBar__emailMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__child {
+    margin-left: 0;
+  }
+  .App .contactBar__dnldButton {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .App .home .mySwiper {
+    display: none;
+  }
+  .App .home .mySwiperMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .home .about {
+    margin-top: 180px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 720px;
+    margin-bottom: 80px;
+  }
+  .App .home .about__columnA {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .home .about__columnA #headshot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+  }
+  .App .home .about__columnA-Title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .home .about__columnB {
+    margin-left: 0;
+  }
+  .App .home .about__columnB h4 {
+    margin-bottom: 0;
+  }
+  .App .home .about__columnB #headshot2 {
+    display: none;
+  }
+  .App .home .about__columnB-Title {
+    display: none;
+  }
+  .App .home .testimonials {
+    margin-top: 40px;
+    height: auto;
+  }
+  .App .home .testimonials__column {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .App .caseStudy__nav a:visited path#pathE {
+    stroke: #F0D3F7;
+  }
+  .App .caseStudy__nav a:visited path#pathF {
+    fill: #F0D3F7;
+  }
+  .App .caseStudy__nav a:hover path#pathE {
+    stroke: #F0D3F7;
+  }
+  .App .caseStudy__nav a:hover path#pathF {
+    fill: #F0D3F7;
+  }
+  .App .caseStudy__nav a:active path#pathE {
+    stroke: #E3A164;
+  }
+  .App .caseStudy__nav a:active path#pathF {
+    fill: #E3A164;
+  }
+  .App .caseStudy__detail .backToTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+  }
+  .App .caseStudy__detail .mySwiper {
+    display: none;
+  }
+  .App .caseStudy__detail .mySwiperMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .caseStudy__detail #flowDiagram {
+    display: none;
+  }
+  .App .caseStudy__detail #flowDiagram_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .App .caseStudy__detail .backToTop:active rect {
+    fill: #E3A164;
+    stroke: #E3A164;
+  }
+  .App .caseStudy__detail .backToTop:active #pathH {
+    fill: #28052b;
+  }
+  .App .caseStudy__detail .backToTop:active #pathJ {
+    stroke: #28052b;
+  }
+  .App .caseStudy__detail-splash {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .App .caseStudy__detail-splash .imgContainer {
+    width: 100%;
+  }
+  .App .caseStudy__detail-splash .imgContainer #jc_splash_desktop, .App .caseStudy__detail-splash .imgContainer #sf_splash_desktop, .App .caseStudy__detail-splash .imgContainer #c150_splash_desktop, .App .caseStudy__detail-splash .imgContainer #mcds_splash_desktop {
+    display: none;
+  }
+  .App .caseStudy__detail-splash .imgContainer #jc_splash_mobile, .App .caseStudy__detail-splash .imgContainer #sf_splash_mobile, .App .caseStudy__detail-splash .imgContainer #c150_splash_mobile, .App .caseStudy__detail-splash .imgContainer #mcds_splash_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .caseStudy__detail-splash .vitalInfo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .App .caseStudy__detail-splash .vitalInfo ul {
+    padding-left: 0;
+  }
+  .App .caseStudy__detail-body ul {
+    padding-left: 0;
+  }
+  .App .caseStudy__detail-body ul li {
+    margin: 0% 0;
+  }
+  .App .caseStudy__detail-flow #c150_splash_desktop {
+    display: none;
+  }
+  .App .caseStudy__detail-flow #c150_splash_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .footer {
+    text-align: center;
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
