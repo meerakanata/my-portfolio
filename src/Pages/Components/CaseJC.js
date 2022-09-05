@@ -10,8 +10,8 @@ function CaseJC(props) {
           <div className="caseStudy__detail-name">Jason Clerk Industrial Design</div>
           <div className="caseStudy__detail-splash">
             <div className="imgContainer">
-              <img id="jc_splash_desktop" src={"/my-portfolio/.././Images/JCID/splash_jcid.png"} alt="Case Study Splash Image"></img>
-              <img id="jc_splash_mobile" src={"/my-portfolio/.././Images/JCID/splash_jcid_mobile.png"} alt="Case Study Splash Image Mobile optimized"></img>
+              <img id="jc_splash_desktop" src={".././Images/JCID/splash_jcid.png"} alt="Case Study Splash Image"></img>
+              <img id="jc_splash_mobile" src={".././Images/JCID/splash_jcid_mobile.png"} alt="Case Study Splash Image Mobile optimized"></img>
               <div className="imageCaption"></div>
             </div>
             <div className="vitalInfo">

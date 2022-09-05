@@ -15,12 +15,12 @@ function CaseStudy() {
   return (
     <div className="caseStudy">
       <div className="caseStudy__nav">
-        <Link to="/my-portfolio"><Back /></Link>
+        <Link to="/"><Back /></Link>
         <Link to={NextCase()}><Next /></Link>
       </div>
       <DisplayCaseStudy />
             <div className="caseStudy__nav">
-        <Link to="/my-portfolio" onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Back /></Link>
+        <Link to="/" onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Back /></Link>
         <Link to={NextCase()} onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Next /></Link>
       </div>
     </div>
@@ -32,16 +32,16 @@ function NextCase (){
   const currentProj = CaseData.find(element => element.URLquery === project);
   const indexCurrentProj = CaseData.indexOf(currentProj);
     if(indexCurrentProj === 0){
-      return "/my-portfolio/work/SugarFlower";
+      return "/work/SugarFlower";
     }
     else if(indexCurrentProj === 1){
-      return "/my-portfolio/work/Canada150";
+      return "/work/Canada150";
     }
     else if(indexCurrentProj === 2){
-      return "/my-portfolio/work/McDonaldsGCTA";
+      return "/work/McDonaldsGCTA";
     }
     else if(indexCurrentProj === 3){
-      return "/my-portfolio/work/JasonClerkID";
+      return "/work/JasonClerkID";
     } 
 }
 
