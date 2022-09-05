@@ -7,8 +7,8 @@ function CaseCanada150(props) {
       <div className="caseStudy__detail-name">Canada 150</div>
       <div className="caseStudy__detail-splash">
         <div className="imgContainer">
-          <img id="c150_splash_desktop" src={"/my-portfolio/.././Images/Canada150/splash_canada150.png"} alt="Case Study Splash Image"></img>
-          <img id="c150_splash_mobile" src={"/my-portfolio/.././Images/Canada150/splash_canada150_mobile.png"} alt="Case Study Splash Image"></img>
+          <img id="c150_splash_desktop" src={"./Images/Canada150/splash_canada150.png"} alt="Case Study Splash Image"></img>
+          <img id="c150_splash_mobile" src={"./Images/Canada150/splash_canada150_mobile.png"} alt="Case Study Splash Image"></img>
           <div className="imageCaption"></div>
         </div>
         <div className="vitalInfo">
@@ -39,8 +39,8 @@ function CaseCanada150(props) {
         </h4>
       </div>
       <div className="caseStudy__detail-flow">
-        <img id="c150_splash_desktop" src={".././Images/Canada150/flow.jpg"} alt="Case Study User Flow"></img>
-        <img id="c150_splash_mobile" src={".././Images/Canada150/flow_mobile.jpg"} alt="Case Study User Flow mobile optimized"></img>
+        <img id="c150_splash_desktop" src={"./Images/Canada150/flow.jpg"} alt="Case Study User Flow"></img>
+        <img id="c150_splash_mobile" src={"./Images/Canada150/flow_mobile.jpg"} alt="Case Study User Flow mobile optimized"></img>
       </div>
       <div className="caseStudy__detail-heading">Path to Solution</div>
       <div className="caseStudy__detail-body">

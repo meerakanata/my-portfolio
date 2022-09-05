@@ -9,8 +9,8 @@ function CaseMcDs(props) {
       <div className="caseStudy__detail-name">Roadtrip Playlist Builder</div>
       <div className="caseStudy__detail-splash">
         <div className="imgContainer">
-          <img id="mcds_splash_desktop" src={"/my-portfolio/.././Images/McDs/splash_mcds.png"} alt="Case Study Splash Image"></img>
-          <img id="mcds_splash_mobile" src={"/my-portfolio/.././Images/McDs/splash_mcds_mobile.png"} alt="Case Study Splash Image mobile optimized"></img>
+          <img id="mcds_splash_desktop" src={"./Images/McDs/splash_mcds.png"} alt="Case Study Splash Image"></img>
+          <img id="mcds_splash_mobile" src={"./Images/McDs/splash_mcds_mobile.png"} alt="Case Study Splash Image mobile optimized"></img>
           <div className="imageCaption">Image Source: McDonald's Canada</div>
         </div>
         <div className="vitalInfo">
@@ -30,8 +30,8 @@ function CaseMcDs(props) {
         
       <div className="caseStudy__detail-heading">Final Solution - Roadtrip Playlist Builder Website</div>
       <div className="caseStudy__detail-body"><h4>Actual imagery of design artifacts and the final website that was “live” during the promotion are no longer available. This diagram offers a high-level view on the core functionality of the final solution, a Roadtrip Playlist Builder website.</h4></div>
-      <img id="flowDiagram" src={".././Images/McDs/site_flow.svg"} alt="roadtrip playlist website user flow diagram"></img>
-      <img id="flowDiagram_mobile" src={".././Images/McDs/site_flow_mobile.svg"} alt="roadtrip playlist website user flow diagram"></img>
+      <img id="flowDiagram" src={"./Images/McDs/site_flow.svg"} alt="roadtrip playlist website user flow diagram"></img>
+      <img id="flowDiagram_mobile" src={"./Images/McDs/site_flow_mobile.svg"} alt="roadtrip playlist website user flow diagram"></img>
       <div className="caseStudy__detail-heading">Path to Solution</div>
       <div className="caseStudy__detail-body">
         <h4><span>Ideation</span> - To kick-off, I led a brainstorm session with McDonald{"’"}s media agency, OMD, where 3 key insights re-surfaced and provided the foundation for concept development:

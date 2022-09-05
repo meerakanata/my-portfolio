@@ -19,10 +19,10 @@ export default function CarouselSF() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide> <img className="SF_Slide" src=".././Images/SugarFlower/Carousel/Slide1.png" alt="slide 1"/></SwiperSlide>
-        <SwiperSlide> <img className="SF_Slide" src=".././Images/SugarFlower/Carousel/Slide2.png" alt="slide 2"/></SwiperSlide>
-        <SwiperSlide> <img className="SF_Slide" src=".././Images/SugarFlower/Carousel/Slide3.png" alt="slide 3"/></SwiperSlide>
-        <SwiperSlide> <img className="SF_Slide" src=".././Images/SugarFlower/Carousel/Slide4.png" alt="slide 4"/></SwiperSlide>
+        <SwiperSlide> <img className="SF_Slide" src="./Images/SugarFlower/Carousel/Slide1.png" alt="slide 1"/></SwiperSlide>
+        <SwiperSlide> <img className="SF_Slide" src="./Images/SugarFlower/Carousel/Slide2.png" alt="slide 2"/></SwiperSlide>
+        <SwiperSlide> <img className="SF_Slide" src="./Images/SugarFlower/Carousel/Slide3.png" alt="slide 3"/></SwiperSlide>
+        <SwiperSlide> <img className="SF_Slide" src="./Images/SugarFlower/Carousel/Slide4.png" alt="slide 4"/></SwiperSlide>
       </Swiper>
     </>
   );
