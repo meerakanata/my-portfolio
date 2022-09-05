@@ -7,7 +7,7 @@ function CaseCanada150(props) {
       <div className="caseStudy__detail-name">Canada 150</div>
       <div className="caseStudy__detail-splash">
         <div className="imgContainer">
-          <img id="c150_splash_desktop" src={"./Images/Canada150/splash_canada150.png"} alt="Case Study Splash Image"></img>
+          <img id="c150_splash_desktop" src={"./Images/Canada150/splash_canada150.jpf"} alt="Case Study Splash Image"></img>
           <img id="c150_splash_mobile" src={"./Images/Canada150/splash_canada150_mobile.png"} alt="Case Study Splash Image"></img>
           <div className="imageCaption"></div>
         </div>
