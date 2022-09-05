@@ -9,8 +9,8 @@ function CaseSF(props) {
         <div className="caseStudy__detail-name">Sugar {"&"} Flower</div>
         <div className="caseStudy__detail-splash">
           <div className="imgContainer">
-            <img id="sf_splash_desktop" src={".././Images/SugarFlower/splash_sf.png"} alt="Case Study Splash Image"></img>
-            <img id="sf_splash_mobile" src={".././Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash Image mobile optimized"></img>
+            <img id="sf_splash_desktop" src={"/my-portfolio/.././Images/SugarFlower/splash_sf.png"} alt="Case Study Splash Image"></img>
+            <img id="sf_splash_mobile" src={"/my-portfolio/.././Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash Image mobile optimized"></img>
             <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank">@livforcake</a></div>
           </div>
           <div className="vitalInfo">
@@ -47,7 +47,7 @@ function CaseSF(props) {
               </ul></h4>
             </div>
         </div>
-        <video src={".././video/SugarFlower_prototype-vid_2x.mp4"} controls muted height={500}></video>
+        <video src={"/my-portfolio/.././video/SugarFlower_prototype-vid_2x.mp4"} controls muted height={500}></video>
         <div className="caseStudy__detail-heading">Outcomes</div>
         <div className="caseStudy__detail-body"><h4>The first phase of the project provided the opportunity to create a preliminary design solution. Prior to implementation, a working prototype can now be built off this initial design in order to begin user testing.</h4></div>
         <div className="caseStudy__detail-heading">Next Steps</div>

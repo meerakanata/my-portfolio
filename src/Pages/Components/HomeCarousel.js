@@ -23,10 +23,10 @@ export default function HomeCarousel() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide1.png" alt="slide 1" /><div onClick={()=>{navigate("/work/JasonClerkID"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
-        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide2.png" alt="slide 2" /><div onClick={()=>{navigate("/work/SugarFlower"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
-        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide3.png" alt="slide 3" /><div onClick={()=>{navigate("/work/Canada150"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
-        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide4.png" alt="slide 4" /><div onClick={()=>{navigate("/work/McDonaldsGCTA"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
+        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide1.png" alt="slide 1" /><div onClick={()=>{navigate("/my-portfolio/work/JasonClerkID"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
+        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide2.png" alt="slide 2" /><div onClick={()=>{navigate("/my-portfolio/work/SugarFlower"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
+        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide3.png" alt="slide 3" /><div onClick={()=>{navigate("/my-portfolio/work/Canada150"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
+        <SwiperSlide> <img className="Home_Slide" src=".././Images/HomeCarousel/Slide4.png" alt="slide 4" /><div onClick={()=>{navigate("/my-portfolio/work/McDonaldsGCTA"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>
 
       </Swiper>
     </>

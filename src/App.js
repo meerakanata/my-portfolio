@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./Pages/Home"
 import CaseStudy from "./Pages/CaseStudy";
 import ContactBar from "./Pages/Components/ContactBar";
