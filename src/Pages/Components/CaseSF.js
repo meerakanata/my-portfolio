@@ -9,9 +9,9 @@ function CaseSF(props) {
         <div className="caseStudy__detail-name">Sugar {"&"} Flower</div>
         <div className="caseStudy__detail-splash">
           <div className="imgContainer">
-            <img id="sf_splash_desktop" src={"./Images/SugarFlower/splash_sf.png"} alt="Case Study Splash Image"></img>
-            <img id="sf_splash_mobile" src={"./Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash Image mobile optimized"></img>
-            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank">@livforcake</a></div>
+            <img id="sf_splash_desktop" src={"./Images/SugarFlower/splash_sf.png"} alt="Case Study Splash"></img>
+            <img id="sf_splash_mobile" src={"./Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash mobile optimized"></img>
+            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank" rel="noreferrer" >@livforcake</a></div>
           </div>
           <div className="vitalInfo">
             <ul type="none">

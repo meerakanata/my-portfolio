@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 
 
@@ -9,8 +9,8 @@ function CaseMcDs(props) {
       <div className="caseStudy__detail-name">Roadtrip Playlist Builder</div>
       <div className="caseStudy__detail-splash">
         <div className="imgContainer">
-          <img id="mcds_splash_desktop" src={"./Images/McDs/splash_mcds.jpf"} alt="Case Study Splash Image"></img>
-          <img id="mcds_splash_mobile" src={"./Images/McDs/splash_mcds_mobile.jpf"} alt="Case Study Splash Image mobile optimized"></img>
+          <img id="mcds_splash_desktop" src={"./Images/McDs/splash_mcds.png"} alt="Case Study Splash"></img>
+          <img id="mcds_splash_mobile" src={"./Images/McDs/splash_mcds_mobile.png"} alt="Case Study Splash mobile optimized"></img>
           <div className="imageCaption">Image Source: McDonald's Canada</div>
         </div>
         <div className="vitalInfo">

@@ -10,8 +10,8 @@ function CaseJC(props) {
           <div className="caseStudy__detail-name">Jason Clerk Industrial Design</div>
           <div className="caseStudy__detail-splash">
             <div className="imgContainer">
-              <img id="jc_splash_desktop" src={"./Images/JCID/splash_jcid.png"} alt="Case Study Splash Image"></img>
-              <img id="jc_splash_mobile" src={"./Images/JCID/splash_jcid_mobile.png"} alt="Case Study Splash Image Mobile optimized"></img>
+              <img id="jc_splash_desktop" src={"./Images/JCID/splash_jcid.png"} alt="Case Study Splash"></img>
+              <img id="jc_splash_mobile" src={"./Images/JCID/splash_jcid_mobile.png"} alt="Case Study Splash Mobile optimized"></img>
               <div className="imageCaption"></div>
             </div>
             <div className="vitalInfo">
@@ -37,7 +37,7 @@ function CaseJC(props) {
             <CarouselJC /> 
             <CarouselJCMobile />
           <div className="caseStudy__detail-heading">Outcomes</div>
-          <div className="caseStudy__detail-body"><h4>Jason now had an updated version of his <a href="https://jasonclerk.com/" className="jaySiteLink" target="_blank">portfolio</a> online to showcase his work to clients/employers. Within a few days of launching the site, Jason was able to walk a potential client through his work via the site in a phone meeting. Having the site has equipped him to have more meaningful discussions with potential clients advancing the opportunities to secure new business.</h4></div>
+          <div className="caseStudy__detail-body"><h4>Jason now had an updated version of his <a href="https://jasonclerk.com/" className="jaySiteLink" target="_blank" rel="noreferrer">portfolio</a> online to showcase his work to clients/employers. Within a few days of launching the site, Jason was able to walk a potential client through his work via the site in a phone meeting. Having the site has equipped him to have more meaningful discussions with potential clients advancing the opportunities to secure new business.</h4></div>
           <div className="caseStudy__detail-heading">Next Steps</div>
           <div className="caseStudy__detail-body">
             <h4><ul type="none">

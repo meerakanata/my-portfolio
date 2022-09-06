@@ -1,8 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-function Testimonials() {
-    let navigate = useNavigate();
+function Testimonials() { 
     return (
         <div className="testimonials">
                 <div className="testimonials__column">
