@@ -2,11 +2,21 @@ import React from "react";
 import CarouselJC from "./CarouselJC";
 import CarouselJCMobile from "./CarouselJCMobile";
 
+import { useEffect } from "react";
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
 
 function CaseJC(props) {
 
     return (
         <div className="caseStudy__detail">
+          <ScrollToTopOnMount />
           <div className="caseStudy__detail-name">Jason Clerk Industrial Design</div>
           <div className="caseStudy__detail-splash">
             <div className="imgContainer">

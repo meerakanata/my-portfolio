@@ -68,26 +68,28 @@ html {
             right: 4%;
         }
         .viewCaseButton:hover{
-            rect, #pathL{
-                stroke: $color-01;
+            #path2{
+                fill: $color-05;
+                stroke: $color-05;
+                opacity: 0.1;
             }
-            #pathM{
-                fill:$color-01;
+            #path8{
+                fill: $color-05;
+                stroke: $color-05;
+                opacity: 0.1;
             }
 
         }
         .viewCaseButton:active{
-            fill:$color-01;
-            rect{
-                stroke: $color-01;
-                fill:$color-01;
+            #path2{
+                fill: $color-05;
+                stroke: $color-05;
+                opacity: 0.4;
             }
-            #pathL{
-                stroke: $color-03;
-            }
-            #pathM{
-                fill: $color-03;
-                
+            #path8{
+                fill: $color-05;
+                stroke: $color-05;
+                opacity: 0.4;
             }
         }
     }
@@ -141,6 +143,9 @@ html {
 
     }
     .contactBar__emailMobile{
+        display: none;
+    }
+    .contactBar__emailMobile-icon{
         display: none;
     }
     .contactBar__child{
@@ -352,6 +357,7 @@ html {
             display: none;
         }
         video {
+            width: 100%;
             border-radius: 40px;
             background-color: $color-05;
             margin-top: -40px;
@@ -413,6 +419,7 @@ html {
         h4{
             margin: 0;
             font-weight: 300;
+            font-size: 16px;
             ul>p{
                 margin-bottom: 0;
             }
@@ -464,7 +471,7 @@ html {
                 font-family: $font-01;
                 font-size: 12px;
                 color: $color-04;
-                padding: 1%;
+                padding: 2%;
                 .livSiteLink{
                     color: $color-02;
                 }
@@ -518,7 +525,7 @@ html {
 
 
     .footer{
-        @include fr;
+        @include fc;
         justify-content: center;
         font-family: $font-01;
         font-size: 12px;
@@ -533,6 +540,31 @@ and (min-width: 769px){
     .App{
         margin-left: 6vw;
         margin-right: 6vw;
+        .contactBar{
+            justify-content: flex-end;
+            padding-right: 6%;
+            margin-left: 6%;
+            #LinkedInIcon{
+                padding-right: 8%;
+            }
+        }
+        a.contactBar__email{
+            display: flex;
+        }
+        .contactBar__emailMobile{
+            display: none;
+            padding-right: 8%;
+        }
+        .contactBar__emailMobile-icon{
+            display: none;
+        }
+        .contactBar__dnldButton{
+            margin-left: 0;
+            padding-right: 0;
+        }
+        .contactBar__child{
+            margin-left: 0;
+        }
         .home{
             .about__columnA{
                 #headshot{
@@ -574,10 +606,14 @@ and (min-width: 601px){
             }
         }
         a.contactBar__email{
-            display: none;
+            display: flex;
         }
         .contactBar__emailMobile{
-            display: flex;
+            display: none;
+            padding-right: 8%;
+        }
+        .contactBar__emailMobil-icon{
+            display: none;
             padding-right: 8%;
         }
         .contactBar__dnldButton{
@@ -642,6 +678,33 @@ and (min-width: 451px){
     .App{
         margin-left: 8%;
         margin-right: 8%;
+        .contactBar{
+            justify-content: flex-end;
+            padding-right: 5%;
+            margin-left: 5%;
+            #LinkedInIcon{
+                padding-right: 8%;
+            }
+        }
+        a.contactBar__email{
+            display: none;
+        }
+        .contactBar__emailMobile{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__emailMobile-icon{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__child{
+            margin-left: 0;
+        }
+        .contactBar__dnldButton{
+            margin-left: 0;
+            padding-right: 0;
+
+        }
         .home{
             .mySwiper{
                 display: none;
@@ -752,7 +815,10 @@ and (min-width: 0px){
                 right: 10%;
             }        
             .swiper-slide{
-            width: 80%;
+            width: 100%;
+            }
+            .swiper-wrapper {
+                margin-left: -10%;
             }
         }
 
@@ -772,6 +838,10 @@ and (min-width: 0px){
             display: none;
         }
         .contactBar__emailMobile{
+            display: flex;
+            padding-right: 8%;
+        }
+        .contactBar__emailMobile-icon{
             display: flex;
             padding-right: 8%;
         }
@@ -922,6 +992,7 @@ and (min-width: 0px){
                     margin: 0% 0;
                 }
             }
+            font-size: 16px;
         }
         .caseStudy__detail-flow{
             #c150_splash_desktop{
@@ -933,7 +1004,9 @@ and (min-width: 0px){
         }
         .footer{
             text-align: center;
-            width: 65%;
+            p{
+                margin: 0;
+            }
         }
 
     }

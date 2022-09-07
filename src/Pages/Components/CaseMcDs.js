@@ -1,11 +1,21 @@
 import React from 'react';
 
+import { useEffect } from "react";
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
 
 
 function CaseMcDs(props) {
 
   return (
     <div className="caseStudy__detail">
+      <ScrollToTopOnMount />
       <div className="caseStudy__detail-name">Roadtrip Playlist Builder</div>
       <div className="caseStudy__detail-splash">
         <div className="imgContainer">

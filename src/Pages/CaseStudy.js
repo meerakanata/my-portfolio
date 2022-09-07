@@ -8,6 +8,7 @@ import CaseMcDs from "./Components/CaseMcDs";
 import Back from "./Components/Back"
 import Next from "./Components/Next";
 
+
 var CaseData = require('./Components/Data Modules/CaseData'); //data set
 
 function CaseStudy() {
@@ -19,9 +20,11 @@ function CaseStudy() {
         <Link to={NextCase()}><Next /></Link>
       </div>
       <DisplayCaseStudy />
-            <div className="caseStudy__nav">
-        <Link to="/" onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Back /></Link>
-        <Link to={NextCase()} onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Next /></Link>
+      <div className="caseStudy__nav">
+        <Link to="/"><Back /></Link>
+        <Link to={NextCase()}><Next /></Link>
+        {/* <Link to="/" onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Back /></Link>
+        <Link to={NextCase()} onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Next /></Link> */}
       </div>
     </div>
   );

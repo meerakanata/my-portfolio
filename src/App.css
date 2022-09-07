@@ -73,29 +73,28 @@ html {
   right: 4%;
 }
 
-#root .swiper .viewCaseButton:hover rect, #root .swiper .viewCaseButton:hover #pathL {
-  stroke: #E3A164;
+#root .swiper .viewCaseButton:hover #path2 {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  opacity: 0.1;
 }
 
-#root .swiper .viewCaseButton:hover #pathM {
-  fill: #E3A164;
+#root .swiper .viewCaseButton:hover #path8 {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  opacity: 0.1;
 }
 
-#root .swiper .viewCaseButton:active {
-  fill: #E3A164;
+#root .swiper .viewCaseButton:active #path2 {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  opacity: 0.4;
 }
 
-#root .swiper .viewCaseButton:active rect {
-  stroke: #E3A164;
-  fill: #E3A164;
-}
-
-#root .swiper .viewCaseButton:active #pathL {
-  stroke: #28052b;
-}
-
-#root .swiper .viewCaseButton:active #pathM {
-  fill: #28052b;
+#root .swiper .viewCaseButton:active #path8 {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  opacity: 0.4;
 }
 
 ::-webkit-scrollbar {
@@ -178,6 +177,10 @@ html {
 }
 
 .App .contactBar__emailMobile {
+  display: none;
+}
+
+.App .contactBar__emailMobile-icon {
   display: none;
 }
 
@@ -542,6 +545,7 @@ html {
 }
 
 .App .caseStudy__detail video {
+  width: 100%;
   border-radius: 40px;
   background-color: #FFFFFF;
   margin-top: -40px;
@@ -621,6 +625,7 @@ html {
 .App .caseStudy__detail-body h4 {
   margin: 0;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .App .caseStudy__detail-body h4 ul > p {
@@ -718,7 +723,7 @@ html {
   font-family: "Jost", sans-serif;
   font-size: 12px;
   color: #A57982;
-  padding: 1%;
+  padding: 2%;
 }
 
 .App .caseStudy__detail-splash .imgContainer .imageCaption .livSiteLink {
@@ -794,10 +799,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -812,6 +817,35 @@ html {
   .App {
     margin-left: 6vw;
     margin-right: 6vw;
+  }
+  .App .contactBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 6%;
+    margin-left: 6%;
+  }
+  .App .contactBar #LinkedInIcon {
+    padding-right: 8%;
+  }
+  .App a.contactBar__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .contactBar__emailMobile {
+    display: none;
+    padding-right: 8%;
+  }
+  .App .contactBar__emailMobile-icon {
+    display: none;
+  }
+  .App .contactBar__dnldButton {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .App .contactBar__child {
+    margin-left: 0;
   }
   .App .home .about__columnA #headshot {
     display: none;
@@ -857,12 +891,16 @@ html {
     padding-right: 8%;
   }
   .App a.contactBar__email {
-    display: none;
-  }
-  .App .contactBar__emailMobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .App .contactBar__emailMobile {
+    display: none;
+    padding-right: 8%;
+  }
+  .App .contactBar__emailMobil-icon {
+    display: none;
     padding-right: 8%;
   }
   .App .contactBar__dnldButton {
@@ -918,6 +956,38 @@ html {
   .App {
     margin-left: 8%;
     margin-right: 8%;
+  }
+  .App .contactBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 5%;
+    margin-left: 5%;
+  }
+  .App .contactBar #LinkedInIcon {
+    padding-right: 8%;
+  }
+  .App a.contactBar__email {
+    display: none;
+  }
+  .App .contactBar__emailMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__emailMobile-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__child {
+    margin-left: 0;
+  }
+  .App .contactBar__dnldButton {
+    margin-left: 0;
+    padding-right: 0;
   }
   .App .home .mySwiper {
     display: none;
@@ -1042,7 +1112,10 @@ html {
     right: 10%;
   }
   #root .swiper .swiper-slide {
-    width: 80%;
+    width: 100%;
+  }
+  #root .swiper .swiper-wrapper {
+    margin-left: -10%;
   }
   .App {
     margin-right: 7%;
@@ -1062,6 +1135,12 @@ html {
     display: none;
   }
   .App .contactBar__emailMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 8%;
+  }
+  .App .contactBar__emailMobile-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1208,6 +1287,9 @@ html {
   .App .caseStudy__detail-splash .vitalInfo ul {
     padding-left: 0;
   }
+  .App .caseStudy__detail-body {
+    font-size: 16px;
+  }
   .App .caseStudy__detail-body ul {
     padding-left: 0;
   }
@@ -1224,7 +1306,9 @@ html {
   }
   .App .footer {
     text-align: center;
-    width: 65%;
+  }
+  .App .footer p {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -2,10 +2,21 @@ import React from "react";
 import CarouselSF from "./CarouselSF";
 import CarouselSFMobile from "./CarouselSFMobile";
 
+import { useEffect } from "react";
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
 function CaseSF(props) {
 
   return (
     <div className="caseStudy__detail">
+      <ScrollToTopOnMount />
         <div className="caseStudy__detail-name">Sugar {"&"} Flower</div>
         <div className="caseStudy__detail-splash">
           <div className="imgContainer">
