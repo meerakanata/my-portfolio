@@ -35,7 +35,7 @@ function CaseCanada150(props) {
       <div className="caseStudy__detail-body"><h4>The Canada 150 project was a multi-faceted marketing effort that ran in 2017 to celebrate the 150 years that passed since Confederation. The partnership between the Government of Canada (GoC) and Spotify Canada spanned several months including an entire ecosystem (offline and online) to capture the interest of Canadians, and drive excitement leading up to July 1st. </h4></div>
       <div className="caseStudy__detail-heading">Problem to Solve {"&"} Core Considerations</div>
       <div className="caseStudy__detail-body">
-        <h4>Initially, the project started strictly as a partnership between the GoC and our Ad Sales team, but I quickly realized that there was potential benefits to expanding the partnership beyond my team. The GoC and Spotify shared the goal of showcasing Canada’s diverse artistic talent, so it made perfect sense to create a co-branded solution to deliver on the shared goal.
+        <h4>Initially, the project started strictly as a partnership between the GoC and our Ad Sales team, but I quickly realized that there were potential benefits to expanding the partnership beyond my team. The GoC and Spotify shared the goal of showcasing Canada’s diverse artistic talent, so it made perfect sense to create a co-branded solution to deliver on the shared goal.
           <p>The problem or question at hand became “How do we create an exciting, and completely innovative promotion, that includes an external partner, and successfully balances the nuanced objectives of multiple stakeholders?”</p>
         </h4>
       </div>
@@ -70,22 +70,22 @@ function CaseCanada150(props) {
       <div className="caseStudy__detail-heading">Level Up</div>
       <div className="caseStudy__detail-body">
         <h4>This project cemented several skills transferable to UX/UI Design:
-          <p><span>Data-Driven Mindset</span> - A high-stakes project from the get-go, I was reminded of the importance of having sound data/insights to rely upon when making decisions. As a result, I now try to approach my work with a data-driven mindset to minimize/eliminate guesswork or assumptions.</p>
+          <p><span>Data-Driven Mindset</span> - A high-stakes project from the get-go, I was reminded of the importance of having sound data/insights to rely upon when making decisions. As a result, I continue to employ a data-driven mindset to minimize/eliminate guesswork or assumptions.</p>
           <p><span>Cross-Functional Collaboration</span> - This project truly gave me the freedom to learn how to work collaboratively with other teams at Spotify over several months. I learned the importance of understanding everyone’s goals and how to effectively prioritize within a larger group to ensure progress on the project as a whole.</p>
-          <p><span>Innovation</span> - This project challenged me to go beyond the standardized solutions we might typically offer up to partners. While those other solutions worked well 95% of the time, and drove efficiencies in our work flow, this project allowed us to flex our innovation skills, leveraging Spotify{"'"}s varied offerings to deliver a completely original partnership.</p>
+          <p><span>Innovation</span> - I was challenged by this project to go beyond the standardized solutions we might typically offer up to partners. While those other solutions worked well 95% of the time, and drove efficiencies in our work flow, this project allowed us to flex our innovation skills, leveraging Spotify{"'"}s varied offerings to deliver a completely original partnership.</p>
         </h4>
       </div>
       <div className="caseStudy__detail-heading">Specialized Team {"&"} Key Stakeholders</div>
       <div className="caseStudy__detail-body">
         <h4>A team of specialists from various business units within Spotify collaborated to flesh out and execute the project in its entirety. The team was made up by:
           <ul type="none"><p>
-              <li>Meera Shah - Ad Sales - Spotify</li>
-              <li>Ingrid Rosaeg - Ad Sales - Spotify</li>
-              <li>Liza Haddad - Creative Solutions - Spotify</li>
-              <li>Claudia Seti - Consumer Marketing - Spotify</li>
-              <li>Jacqueline O{"’"}Brien - Consumer Marketing - Spotify</li>
-              <li>Nathan Wiszniak - Label {"&"} Artist Relations - Spotify</li>
-              <li>Gregg Henderson - Editorial - Spotify</li>
+              <li>Meera Shah - Ad Sales</li>
+              <li>Ingrid Rosaeg - Ad Sales</li>
+              <li>Liza Haddad - Creative Solutions</li>
+              <li>Claudia Seti - Consumer Marketing</li>
+              <li>Jacqueline O{"’"}Brien - Consumer Marketing</li>
+              <li>Nathan Wiszniak - Label {"&"} Artist Relations</li>
+              <li>Gregg Henderson - Editorial</li>
           </p></ul>
           <p>Additionally, the folllowing stakeholders contributed extensively to the co-branded aspects of the partnership:</p>
           <ul type="none">
