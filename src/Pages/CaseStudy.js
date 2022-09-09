@@ -6,7 +6,11 @@ import CaseSF from "./Components/CaseSF";
 import CaseCanada150 from "./Components/CaseCanada150";
 import CaseMcDs from "./Components/CaseMcDs";
 import Back from "./Components/Back"
-import Next from "./Components/Next";
+import Pagination from "./Components/Pagination";
+import Page1Label from "./Components/Page1Label";
+import Page2Label from "./Components/Page2Label";
+import Page3Label from "./Components/Page3Label";
+import Page4Label from "./Components/Page4Label";
 
 
 var CaseData = require('./Components/Data Modules/CaseData'); //data set
@@ -15,38 +19,128 @@ function CaseStudy() {
 
   return (
     <div className="caseStudy">
-      <div className="caseStudy__nav">
-        <Link to="/"><Back /></Link>
-        <Link to={NextCase()}><Next /></Link>
-      </div>
+      <div className={"pagination"}><DisplayPagination /></div>
+      <div className={"paginationMobile"}><DisplayPaginationMobile /></div>
       <DisplayCaseStudy />
-      <div className="caseStudy__nav">
-        <Link to="/"><Back /></Link>
-        <Link to={NextCase()}><Next /></Link>
-        {/* <Link to="/" onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Back /></Link>
-        <Link to={NextCase()} onClick={()=>{window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><Next /></Link> */}
-      </div>
+      <div className={"pagination"}><DisplayPagination /></div>
+      <div className={"paginationMobile"}><DisplayPaginationMobile /></div>
     </div>
   );
 }
 
-function NextCase (){
+
+function DisplayPagination (){
   let {project} = useParams();
-  const currentProj = CaseData.find(element => element.URLquery === project);
-  const indexCurrentProj = CaseData.indexOf(currentProj);
-    if(indexCurrentProj === 0){
-      return "/work/SugarFlower";
+  if(project === "JasonClerkID"){
+    return (
+      <div className="caseStudy__nav">
+        <Link to="/"><Back className={"backButton"} /></Link>
+        <div className="caseStudy__nav-pageLinks">
+          <Page1Label className={"pageActive"}/>
+          <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+          <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+          <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link> 
+        </div>
+      </div>
+    )
+  }
+  else if(project === "SugarFlower"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+            <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+            <Page2Label className={"pageActive"}/>
+            <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+            <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link>
+          </div>
+        </div>
+      )
     }
-    else if(indexCurrentProj === 1){
-      return "/work/Canada150";
+    else if(project === "Canada150"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+            <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+            <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+            <Page3Label className={"pageActive"}/>
+            <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link>
+          </div>
+        </div>
+      )
     }
-    else if(indexCurrentProj === 2){
-      return "/work/McDonaldsGCTA";
+    else if(project === "McDonaldsGCTA"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+            <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+            <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+            <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+            <Page4Label className={"pageActive"}/>
+          </div>
+        </div>
+      )
     }
-    else if(indexCurrentProj === 3){
-      return "/work/JasonClerkID";
-    } 
-}
+    else return console.log("error")
+  }
+function DisplayPaginationMobile (){
+  let {project} = useParams();
+  if(project === "JasonClerkID"){
+    return (
+      <div className="caseStudy__nav">
+        <Link to="/"><Back className={"backButton"} /></Link>
+        <div className="caseStudy__nav-pageLinks">
+          <Pagination className={"pageOneActiveMobile"}/>
+          <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+          <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+          <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link> 
+        </div>
+      </div>
+    )
+  }
+  else if(project === "SugarFlower"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+          <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+          <Pagination className={"pageTwoActiveMobile"}/>
+          <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+          <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link> 
+          </div>
+        </div>
+      )
+    }
+    else if(project === "Canada150"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+          <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+          <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+          <Pagination className={"pageThreeActiveMobile"}/>
+          <Link to="/work/McDonaldsGCTA"><Pagination className={"pageFour"}/></Link> 
+          </div>
+        </div>
+      )
+    }
+    else if(project === "McDonaldsGCTA"){
+      return (
+        <div className="caseStudy__nav">
+          <Link to="/"><Back className={"backButton"} /></Link>
+          <div className="caseStudy__nav-pageLinks">
+          <Link to="/work/JasonClerkID"><Pagination className={"pageOne"}/></Link>
+          <Link to="/work/SugarFlower"><Pagination className={"pageTwo"}/></Link>
+          <Link to="/work/Canada150"><Pagination className={"pageThree"}/></Link>
+          <Pagination className={"pageFourActiveMobile"}/>
+          </div>
+        </div>
+      )
+    }
+    else return console.log("error")
+  }
 
 function DisplayCaseStudy (){
   let {project} = useParams();

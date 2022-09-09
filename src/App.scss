@@ -64,8 +64,14 @@ html {
         }
         .viewCaseButton{
             position: absolute;
-            bottom: 13%;
+            bottom: 9%;
             right: 4%;
+            #path9,#path3{
+                fill:$color-03;
+            }
+            #path10,#path4{
+                stroke: $color-03;
+            }
         }
         .viewCaseButton:hover{
             #path2{
@@ -296,37 +302,251 @@ html {
         span{
             color: $color-01;
         }
+        .pagination{
+            display: flex;
+        }
+        .paginationMobile{
+            display: none;
+        }
     }
     .caseStudy__nav{
         @include fr;
         justify-content: space-between;
         align-items: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        width: 100%;
         animation: fadeInAnimation ease 5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        a:visited{
-            path#pathE{
-                stroke: $color-02;
-            }
-            path#pathF{
-                fill: $color-02;
-            }
-        }
-        a{
-            display: flex;
-            font-family: $font-01;
-            color: $color-02;
-            font-size: 16px;
-            margin-bottom: 50px;
-            margin-top: 30px;
-            text-decoration: none;
-        }
-        a:hover{
-            path#pathE{
+        .backButton:hover{
+            #pathN, circle{
                 stroke: $color-01;
             }
-            path#pathF{
+        }
+        .backButton:active{
+            #pathN{
+                stroke: $color-03;
+            }
+            circle{
                 fill: $color-01;
+                stroke: $color-01;
+            }
+        }
+        .pageActive{
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        a{
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        // a:visited{
+        //     path#pathE{
+        //         stroke: $color-02;
+        //     }
+        //     path#pathF{
+        //         fill: $color-02;
+        //     }
+        // }
+        // a{
+        //     display: flex;
+        //     font-family: $font-01;
+        //     color: $color-02;
+        //     font-size: 16px;
+        //     margin-bottom: 50px;
+        //     margin-top: 30px;
+        //     text-decoration: none;
+        // }
+        // a:hover{
+        //     path#pathE{
+        //         stroke: $color-01;
+        //     }
+        //     path#pathF{
+        //         fill: $color-01;
+        //     }
+        // }
+        .pageOne{
+            #pathD{
+                fill: $color-02;
+            }
+            #pathA, #pathB, #pathC{
+                opacity: 0;
+            }
+        }
+        .pageOne:hover{
+            #pathD{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathB, #pathC{
+                opacity: 0;
+            }
+        }
+        .pageOne:active{
+            #pathD{
+                fill: $color-03;
+            }
+            rect{
+                stroke: $color-01;
+                fill: $color-01;
+            }
+            #pathA, #pathB, #pathC{
+                opacity: 0;
+            }
+        }
+        
+        .pageTwo{
+            #pathC{
+                fill: $color-02;
+            }
+            #pathA, #pathB, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageTwo:hover{
+            #pathC{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathB, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageTwo:active{
+            #pathC{
+                fill: $color-03;
+            }
+            rect{
+                stroke: $color-01;
+                fill: $color-01;
+            }
+            #pathA, #pathB, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageThree{
+            #pathB{
+                fill: $color-02;
+            }
+            #pathA, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageThree:hover{
+            #pathB{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageThree:active{
+            #pathB{
+                fill: $color-03;
+            }
+            rect{
+                stroke: $color-01;
+                fill: $color-01;
+            }
+            #pathA, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageFour{
+            #pathA{
+                fill: $color-02;
+            }
+            #pathB, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageFour:hover{
+            #pathA{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathB, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageFour:active{
+            #pathA{
+                fill: $color-03;
+            }
+            rect{
+                stroke: $color-01;
+                fill: $color-01;
+            }
+            #pathB, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+    }
+    .caseStudy__nav-pageLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .pageActive, a{
+            padding-left: 20px;
+        }
+        .pageOneActiveMobile{
+            padding-left: 20px;
+            #pathD{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathB, #pathC{
+                opacity: 0;
+            }
+        }
+        .pageTwoActiveMobile{
+            padding-left: 20px;
+            #pathC{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathB, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageThreeActiveMobile{
+            padding-left: 20px;
+            #pathB{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathA, #pathC, #pathD{
+                opacity: 0;
+            }
+        }
+        .pageFourActiveMobile{
+            padding-left: 20px;
+            #pathA{
+                fill: $color-01;
+            }
+            rect{
+                stroke: $color-01;
+            }
+            #pathB, #pathC, #pathD{
+                opacity: 0;
             }
         }
     }
@@ -527,6 +747,7 @@ html {
     .footer{
         @include fc;
         justify-content: center;
+        align-items: center;
         font-family: $font-01;
         font-size: 12px;
         color: $color-05;
@@ -774,6 +995,14 @@ and (min-width: 451px){
             margin-left: 0;
             padding-right: 0;
         }
+        .caseStudy{
+            .pagination{
+                display: none;
+            }
+            .paginationMobile{
+                display: flex;
+            }
+        }
         .caseStudy__detail{
             #flowDiagram{
                 display: none;
@@ -811,7 +1040,7 @@ and (min-width: 0px){
             width: 100%;
             .viewCaseButton{
                 position: absolute;
-                bottom: 4%;
+                bottom: 6%;
                 right: 10%;
             }        
             .swiper-slide{
@@ -901,9 +1130,14 @@ and (min-width: 0px){
                 margin-bottom: 50px;
             }
         }
-        // .caseStudy{
-
-        // }
+        .caseStudy{
+            .pagination{
+                display: none;
+            }
+            .paginationMobile{
+                display: flex;
+            }
+        }
         .caseStudy__nav{
             a:visited{
                 path#pathE{

@@ -69,8 +69,16 @@ html {
 
 #root .swiper .viewCaseButton {
   position: absolute;
-  bottom: 13%;
+  bottom: 9%;
   right: 4%;
+}
+
+#root .swiper .viewCaseButton #path9, #root .swiper .viewCaseButton #path3 {
+  fill: #28052b;
+}
+
+#root .swiper .viewCaseButton #path10, #root .swiper .viewCaseButton #path4 {
+  stroke: #28052b;
 }
 
 #root .swiper .viewCaseButton:hover #path2 {
@@ -449,6 +457,16 @@ html {
   color: #E3A164;
 }
 
+.App .caseStudy .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .caseStudy .paginationMobile {
+  display: none;
+}
+
 .App .caseStudy__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +481,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;
   -webkit-animation: fadeInAnimation ease 5s;
           animation: fadeInAnimation ease 5s;
   -webkit-animation-iteration-count: 1;
@@ -471,32 +492,248 @@ html {
           animation-fill-mode: forwards;
 }
 
-.App .caseStudy__nav a:visited path#pathE {
-  stroke: #F0D3F7;
-}
-
-.App .caseStudy__nav a:visited path#pathF {
-  fill: #F0D3F7;
-}
-
-.App .caseStudy__nav a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Jost", sans-serif;
-  color: #F0D3F7;
-  font-size: 16px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  text-decoration: none;
-}
-
-.App .caseStudy__nav a:hover path#pathE {
+.App .caseStudy__nav .backButton:hover #pathN, .App .caseStudy__nav .backButton:hover circle {
   stroke: #E3A164;
 }
 
-.App .caseStudy__nav a:hover path#pathF {
+.App .caseStudy__nav .backButton:active #pathN {
+  stroke: #28052b;
+}
+
+.App .caseStudy__nav .backButton:active circle {
   fill: #E3A164;
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav .pageActive {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .caseStudy__nav a {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.App .caseStudy__nav .pageOne #pathD {
+  fill: #F0D3F7;
+}
+
+.App .caseStudy__nav .pageOne #pathA, .App .caseStudy__nav .pageOne #pathB, .App .caseStudy__nav .pageOne #pathC {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageOne:hover #pathD {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageOne:hover rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav .pageOne:hover #pathA, .App .caseStudy__nav .pageOne:hover #pathB, .App .caseStudy__nav .pageOne:hover #pathC {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageOne:active #pathD {
+  fill: #28052b;
+}
+
+.App .caseStudy__nav .pageOne:active rect {
+  stroke: #E3A164;
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageOne:active #pathA, .App .caseStudy__nav .pageOne:active #pathB, .App .caseStudy__nav .pageOne:active #pathC {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageTwo #pathC {
+  fill: #F0D3F7;
+}
+
+.App .caseStudy__nav .pageTwo #pathA, .App .caseStudy__nav .pageTwo #pathB, .App .caseStudy__nav .pageTwo #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageTwo:hover #pathC {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageTwo:hover rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav .pageTwo:hover #pathA, .App .caseStudy__nav .pageTwo:hover #pathB, .App .caseStudy__nav .pageTwo:hover #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageTwo:active #pathC {
+  fill: #28052b;
+}
+
+.App .caseStudy__nav .pageTwo:active rect {
+  stroke: #E3A164;
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageTwo:active #pathA, .App .caseStudy__nav .pageTwo:active #pathB, .App .caseStudy__nav .pageTwo:active #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageThree #pathB {
+  fill: #F0D3F7;
+}
+
+.App .caseStudy__nav .pageThree #pathA, .App .caseStudy__nav .pageThree #pathC, .App .caseStudy__nav .pageThree #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageThree:hover #pathB {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageThree:hover rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav .pageThree:hover #pathA, .App .caseStudy__nav .pageThree:hover #pathC, .App .caseStudy__nav .pageThree:hover #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageThree:active #pathB {
+  fill: #28052b;
+}
+
+.App .caseStudy__nav .pageThree:active rect {
+  stroke: #E3A164;
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageThree:active #pathA, .App .caseStudy__nav .pageThree:active #pathC, .App .caseStudy__nav .pageThree:active #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageFour #pathA {
+  fill: #F0D3F7;
+}
+
+.App .caseStudy__nav .pageFour #pathB, .App .caseStudy__nav .pageFour #pathC, .App .caseStudy__nav .pageFour #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageFour:hover #pathA {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageFour:hover rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav .pageFour:hover #pathB, .App .caseStudy__nav .pageFour:hover #pathC, .App .caseStudy__nav .pageFour:hover #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav .pageFour:active #pathA {
+  fill: #28052b;
+}
+
+.App .caseStudy__nav .pageFour:active rect {
+  stroke: #E3A164;
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav .pageFour:active #pathB, .App .caseStudy__nav .pageFour:active #pathC, .App .caseStudy__nav .pageFour:active #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav-pageLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .caseStudy__nav-pageLinks .pageActive, .App .caseStudy__nav-pageLinks a {
+  padding-left: 20px;
+}
+
+.App .caseStudy__nav-pageLinks .pageOneActiveMobile {
+  padding-left: 20px;
+}
+
+.App .caseStudy__nav-pageLinks .pageOneActiveMobile #pathD {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageOneActiveMobile rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageOneActiveMobile #pathA, .App .caseStudy__nav-pageLinks .pageOneActiveMobile #pathB, .App .caseStudy__nav-pageLinks .pageOneActiveMobile #pathC {
+  opacity: 0;
+}
+
+.App .caseStudy__nav-pageLinks .pageTwoActiveMobile {
+  padding-left: 20px;
+}
+
+.App .caseStudy__nav-pageLinks .pageTwoActiveMobile #pathC {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageTwoActiveMobile rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageTwoActiveMobile #pathA, .App .caseStudy__nav-pageLinks .pageTwoActiveMobile #pathB, .App .caseStudy__nav-pageLinks .pageTwoActiveMobile #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav-pageLinks .pageThreeActiveMobile {
+  padding-left: 20px;
+}
+
+.App .caseStudy__nav-pageLinks .pageThreeActiveMobile #pathB {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageThreeActiveMobile rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageThreeActiveMobile #pathA, .App .caseStudy__nav-pageLinks .pageThreeActiveMobile #pathC, .App .caseStudy__nav-pageLinks .pageThreeActiveMobile #pathD {
+  opacity: 0;
+}
+
+.App .caseStudy__nav-pageLinks .pageFourActiveMobile {
+  padding-left: 20px;
+}
+
+.App .caseStudy__nav-pageLinks .pageFourActiveMobile #pathA {
+  fill: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageFourActiveMobile rect {
+  stroke: #E3A164;
+}
+
+.App .caseStudy__nav-pageLinks .pageFourActiveMobile #pathB, .App .caseStudy__nav-pageLinks .pageFourActiveMobile #pathC, .App .caseStudy__nav-pageLinks .pageFourActiveMobile #pathD {
+  opacity: 0;
 }
 
 .App .caseStudy__detail {
@@ -806,6 +1043,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Jost", sans-serif;
   font-size: 12px;
   color: #FFFFFF;
@@ -1071,6 +1311,14 @@ html {
     margin-left: 0;
     padding-right: 0;
   }
+  .App .caseStudy .pagination {
+    display: none;
+  }
+  .App .caseStudy .paginationMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .App .caseStudy__detail #flowDiagram {
     display: none;
   }
@@ -1108,7 +1356,7 @@ html {
   }
   #root .swiper .viewCaseButton {
     position: absolute;
-    bottom: 4%;
+    bottom: 6%;
     right: 10%;
   }
   #root .swiper .swiper-slide {
@@ -1208,6 +1456,14 @@ html {
   .App .home .testimonials__column {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .App .caseStudy .pagination {
+    display: none;
+  }
+  .App .caseStudy .paginationMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .App .caseStudy__nav a:visited path#pathE {
     stroke: #F0D3F7;
