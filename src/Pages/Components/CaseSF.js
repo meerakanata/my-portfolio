@@ -22,7 +22,7 @@ function CaseSF(props) {
           <div className="imgContainer">
             <img id="sf_splash_desktop" src={"./Images/SugarFlower/splash_sf.png"} alt="Case Study Splash"></img>
             <img id="sf_splash_mobile" src={"./Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash mobile optimized"></img>
-            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank" rel="noreferrer" >@livforcake</a>. Cake illustrations are my own.</div>
+            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank" rel="noreferrer" >@livforcake</a></div>
           </div>
           <div className="vitalInfo">
             <ul type="none">

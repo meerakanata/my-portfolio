@@ -88,10 +88,11 @@ function CaseMcDs(props) {
         <ul type="none">
           <li>Meera Shah - Ad Sales - Spotify</li>
           <li>OMD Canada - McDonald{"’"}s Canada Media AOR</li>
-          <li>Cossette Media - McDonald{"’"}s Canada Creative AOR</li>
-          <li>Tribal DDB - McDonald{"’"}s Canada Digital Assets Creators</li>
-          <li>Red Apple Creative - Design and development of the Roadtrip Playlist Website</li>
+          <li>Cossette - McDonald{"’"}s Canada Creative AOR</li>
+          <li>Tribal DDB - McDonald{"’"}s Canada Digital Assets</li>
           <li>McDonald{"’"}s Canada</li>
+          <li>Red Apple Creative - Design {"&"} development of the Roadtrip Playlist Website</li>
+          
         </ul></h4>
       </div>
     </div>
