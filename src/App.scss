@@ -11,7 +11,20 @@
     justify-content: center;
     align-items: center;
 }
-
+@mixin animationQuick {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@mixin animationSlow {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@mixin flex100{
+    display: flex;
+    width: 100%;
+}
 //************** VARIABLES ***********
 
 $color-01: #E3A164;
@@ -134,9 +147,7 @@ html {
         color: $color-04;
         background-color: $color-03;
         z-index: 2000;
-        animation: fadeInAnimation ease 5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        @include animationSlow;
         a{
             display: flex;
             text-decoration: none;
@@ -190,9 +201,7 @@ html {
         @include fc;
         @include cc;
         width: 100%;
-        animation: fadeInAnimation ease 5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        @include animationSlow;
         .mySwiper{
             display: flex;
         }
@@ -296,9 +305,7 @@ html {
     .caseStudy{
         @include fc;
         padding-top: 75px;
-        animation: fadeInAnimation ease 5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        @include animationSlow;
         span{
             color: $color-01;
         }
@@ -316,9 +323,7 @@ html {
         margin-top: 40px;
         margin-bottom: 60px;
         width: 100%;
-        animation: fadeInAnimation ease 5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        @include animationSlow;
         .backButton:hover{
             #pathN, circle{
                 stroke: $color-01;
@@ -334,40 +339,11 @@ html {
             }
         }
         .pageActive{
-            animation: fadeInAnimation ease 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
+            @include animationQuick;
         }
         a{
-            animation: fadeInAnimation ease 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
+            @include animationQuick;
         }
-        // a:visited{
-        //     path#pathE{
-        //         stroke: $color-02;
-        //     }
-        //     path#pathF{
-        //         fill: $color-02;
-        //     }
-        // }
-        // a{
-        //     display: flex;
-        //     font-family: $font-01;
-        //     color: $color-02;
-        //     font-size: 16px;
-        //     margin-bottom: 50px;
-        //     margin-top: 30px;
-        //     text-decoration: none;
-        // }
-        // a:hover{
-        //     path#pathE{
-        //         stroke: $color-01;
-        //     }
-        //     path#pathF{
-        //         fill: $color-01;
-        //     }
-        // }
         .pageOne{
             #pathD{
                 fill: $color-02;
@@ -552,9 +528,7 @@ html {
     }
     .caseStudy__detail{
         @include fc;
-        animation: fadeInAnimation ease 5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        @include animationSlow;
         
         h4{
             font-family: $font-01;
@@ -569,8 +543,7 @@ html {
             display: none;
         }
         #flowDiagram{
-            display: flex;
-            width: 100%;
+            @include flex100;
             margin-top: 10px;
         }
         #flowDiagram_mobile{
@@ -653,13 +626,12 @@ html {
             color: $color-04;
         }
         a.testimonials__column-source{
-            display:flex;
+            @include flex100;
             justify-content: flex-end;
             font-family: $font-01;
             font-size: 14px;
             color: $color-05;
             padding-top: 30px;
-            width: 100%;
         }
     }
     .caseStudy__detail-splash{
@@ -676,8 +648,7 @@ html {
             width: 67%;
             margin-bottom: 20px;
             img{
-                display: flex;
-                width: 100%;
+                @include flex100;
             }
             #jc_splash_desktop, #sf_splash_desktop, #c150_splash_desktop, #mcds_splash_desktop{
                 display: flex;
@@ -1008,8 +979,7 @@ and (min-width: 451px){
                 display: none;
             }
             #flowDiagram_mobile{
-                display: flex;
-                width: 100%;
+                @include flex100;
                 margin-top: 10px;
             }
         }
@@ -1182,8 +1152,7 @@ and (min-width: 0px){
                 display: none;
             }
             #flowDiagram_mobile{
-                display: flex;
-                width: 100%;
+                @include flex100;
                 margin-top: 10px;
             }
             .backToTop:active{

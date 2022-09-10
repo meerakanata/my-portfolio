@@ -38,21 +38,21 @@ function CaseJC(props) {
           <div className="caseStudy__detail-heading">Problem to Solve {"&"} Core Considerations</div>
           <div className="caseStudy__detail-body">
             <h4><ul type="none">
-                <li>- Jason needed a professional website that would quickly communicate his body of work and design process</li>
+                <li>- Jason needed a site to showcase his products and design process</li>
+                <li>- He had limited photography of his products, and his images were low resolution</li>
                 <li>- He wanted a clean, simple, sporty design</li>
-                <li>- There were limitations with his product photography, being mostly low resolution</li>
             </ul></h4>
           </div>
           <div className="caseStudy__detail-heading">Path to Solution</div>
             <CarouselJC /> 
             <CarouselJCMobile />
           <div className="caseStudy__detail-heading">Outcomes</div>
-          <div className="caseStudy__detail-body"><h4>Jason now had an updated version of his <a href="https://jasonclerk.com/" className="jaySiteLink" target="_blank" rel="noreferrer">portfolio</a> to showcase his work to clients/employers. Within a few days of launching the site, Jason was able to walk a potential client through his work via the site in a phone meeting. Having the site has equipped him to have more meaningful discussions with potential clients advancing the opportunities to secure new business.</h4></div>
+          <div className="caseStudy__detail-body"><h4>Jason now had an updated version of his <a href="https://jasonclerk.com/" className="jaySiteLink" target="_blank" rel="noreferrer">portfolio</a> to showcase his work online. Within a few days of launching the site, he was able to walk a potential client through his work, allowing him to unlock more business.</h4></div>
           <div className="caseStudy__detail-heading">Next Steps</div>
           <div className="caseStudy__detail-body">
             <h4><ul type="none">
-                <li>- Collect, consolidate and incorporate user feedback to improve the usability of the site design</li>
-                <li>- Incorporate changes to carousels/pagination/navigation based on feedback collected from a UX Design mentor</li>
+                <li>- Collect, consolidate and incorporate user feedback to improve site design</li>
+                <li>- Incorporate feedback from UX Design mentor by making edits to pagination/navigation</li>
                 <li>- Work with Jason to add new projects to his website and update his profile photo</li>
             </ul></h4>
           </div>

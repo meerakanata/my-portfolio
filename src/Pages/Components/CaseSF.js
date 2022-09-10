@@ -22,7 +22,7 @@ function CaseSF(props) {
           <div className="imgContainer">
             <img id="sf_splash_desktop" src={"./Images/SugarFlower/splash_sf.png"} alt="Case Study Splash"></img>
             <img id="sf_splash_mobile" src={"./Images/SugarFlower/splash_sf_mobile.png"} alt="Case Study Splash mobile optimized"></img>
-            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank" rel="noreferrer" >@livforcake</a></div>
+            <div className="imageCaption">Cake photograpy provided by{'\u00A0'}<a href="https://livforcake.com" className="livSiteLink" target="_blank" rel="noreferrer" >@livforcake</a>. Cake illustrations are my own.</div>
           </div>
           <div className="vitalInfo">
             <ul type="none">
@@ -34,10 +34,10 @@ function CaseSF(props) {
           </div>
         </div>
         <div className="caseStudy__detail-heading">The Backstory</div>
-        <div className="caseStudy__detail-body"><h4>To further develop my practical UX/UI Design skills, I completed a self-directed spec project for a mock business, “Sugar {"& "}Flower”. The inspiration for this project came when I was placing an order for a custom cake for my sister{"’"}s birthday and found that the ordering experience could be improved.</h4></div>
+        <div className="caseStudy__detail-body"><h4>“Sugar {"& "}Flower” was a self-directed spec project for a mock business. The inspiration for this project came when I was placing an order for a custom cake for my sister{"’"}s birthday and found that the ordering experience could be improved.</h4></div>
         <div className="caseStudy__detail-heading">Problem to Solve {"&"} Core Considerations</div>
         <div className="caseStudy__detail-body">
-          <h4><i>Mock Brief: Sugar {"&"} Flower, a locally-owned cake shop wanted to increase sales of their custom cakes. They felt that the process for placing an order could be simplified/automated. Their website did include a shopping cart, but to order a custom cake, customers online were pointed to get in touch with the store directly, where the order would be taken manually by staff. A key insight they shared was that Instagram was quickly becoming their largest source of new customers, as the platform did an amazing job of showcasing the visual appeal of their cakes.</i>
+          <h4><i>Mock Brief: Sugar {"&"} Flower, a locally-owned cake shop wanted to increase sales of their custom cakes. They felt that the process for placing an order could be simplified/automated via their existing website. A key insight they shared was that they were gaining a following rapidly on Instagram because of the “curb appeal” of their cakes.</i>
             <p>The problem of “How to improve the process for ordering a custom cake?” was clear, and to start answering that question, I began with noting the following core considerations:</p>
               <ul type="none"><p>
                 <li>- Improving the process of ordering a custom cake carried different meaning depending on the user (customer vs. shop employee vs shop owner)</li>

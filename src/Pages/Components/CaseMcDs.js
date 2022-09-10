@@ -34,12 +34,12 @@ function CaseMcDs(props) {
       </div>
         
       <div className="caseStudy__detail-heading">The Backstory</div>
-      <div className="caseStudy__detail-body"><h4>Following its success the previous year, in 2016, McDonald{"’"}s Canada brought back their Great Canadian Taste Adventure promotion. The promotion touted a Canadiana-inspired menu, crafted to celebrate the different regions of Canada with meals inspired by regional taste preferences. As part of the promotion, McDonald{"’"}s sought to partner with Spotify to showcase the diversity of the menu items and highlight the regional connection in an engaging way.</h4></div>
+      <div className="caseStudy__detail-body"><h4>In 2016, McDonald’s Canada brought back their Great Canadian Taste Adventure promotion. The promotion touted a Canadiana-inspired menu, with meals inspired by regional taste preferences. As part of the promotion, McDonald’s sought to partner with Spotify to showcase the diversity of the menu items and highlight the regional connection in an engaging way.</h4></div>
       <div className="caseStudy__detail-heading">Problem to Solve {"&"} Core Considerations</div>
-      <div className="caseStudy__detail-body"><h4>I needed to come up with a unique and authentic-feeling way to promote the menu option to Canadians on Spotify. The solution needed to tap into the passion points of Canadians in order to deliver on the key insight of pride and local ties. The solution also needed to provide value in order to ensure Canadians would actually engage with the promotion.</h4></div>
+      <div className="caseStudy__detail-body"><h4>I needed to come up with a unique and authentic-feeling way to promote the menu options to Canadians on Spotify. The solution needed to tap into the passion points of Canadians in order to deliver on the key insight of pride and local ties. The solution also needed to provide value in order to ensure Canadians would actually engage with the promotion.</h4></div>
         
       <div className="caseStudy__detail-heading">Final Solution - Roadtrip Playlist Builder Website</div>
-      <div className="caseStudy__detail-body"><h4>Actual imagery of design artifacts and the final website that was “live” during the promotion are no longer available. This diagram offers a high-level view on the core functionality of the final solution, a Roadtrip Playlist Builder website.</h4></div>
+      <div className="caseStudy__detail-body"><h4>Actual imagery of design artifacts and the final website that was “live” during the promotion are no longer available. This diagram provides a high-level explanation of the core functionality of the website.</h4></div>
       <img id="flowDiagram" src={"./Images/McDs/site_flow.svg"} alt="roadtrip playlist website user flow diagram"></img>
       <img id="flowDiagram_mobile" src={"./Images/McDs/site_flow_mobile.svg"} alt="roadtrip playlist website user flow diagram"></img>
       <div className="caseStudy__detail-heading">Path to Solution</div>
