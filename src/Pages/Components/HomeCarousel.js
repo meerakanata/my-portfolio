@@ -5,8 +5,9 @@ import ViewCaseButton from "./ViewCaseButton";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 export default function HomeCarousel() {
     let navigate = useNavigate();
@@ -20,7 +21,8 @@ export default function HomeCarousel() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation
+        modules={[Navigation, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide> <img className="Home_Slide" src="./Images/HomeCarousel/Slide1.png" alt="slide 1" /><div onClick={()=>{navigate("/work/JasonClerkID"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><ViewCaseButton className={"viewCaseButton"}/></div></SwiperSlide>

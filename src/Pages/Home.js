@@ -21,6 +21,7 @@ function Home() {
         <AboutMe />
         <HomeCarousel />
         <HomeCarouselMobile />
+        <div className="leadin"><p>What clients and colleagues are saying...</p></div>
         <Testimonials />
     </div>
   );

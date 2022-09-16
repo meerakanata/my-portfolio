@@ -47,6 +47,9 @@ html {
         }
     }
 }
+body{
+    font-size: 18px;
+}
 #root{
     @include fc;
     justify-content: flex-start;
@@ -74,6 +77,40 @@ html {
         }
         .swiper-pagination-bullet-active {
             background: $color-01;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            bottom: 60px;
+            //top: 90%;
+            z-index: 5000;
+        }
+        .swiper-button-prev{
+            //width: calc(var(--swiper-navigation-size) / 11.1 * 27);
+            width: 35px;
+            height: 35px;
+            top: 43%;
+            content: url('../public/Icons/ArrowLeft.svg');
+        }
+        .swiper-button-prev:hover{
+            content: url('../public/Icons/ArrowLeftHover.svg');
+        }
+        .swiper-button-prev:active{
+            content: url('../public/Icons/ArrowLeftPressed.svg');
+        }
+        .swiper-button-next{
+            //width: calc(var(--swiper-navigation-size) / 11.1 * 27);
+            width: 35px;
+            height: 35px;
+            top: 43%;
+            content: url('../public/Icons/ArrowRight.svg');
+        }
+        .swiper-button-disabled{
+            display: none;
+        }
+        .swiper-button-next:hover{
+            content: url('../public/Icons/ArrowRightHover.svg');
+        }
+        .swiper-button-next:active{
+            content: url('../public/Icons/ArrowRightPressed.svg');
         }
         .viewCaseButton{
             position: absolute;
@@ -112,7 +149,6 @@ html {
             }
         }
     }
-
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -249,7 +285,7 @@ html {
             font-family: $font-01;
             font-weight: 400;
             color: $color-02;
-            font-size: 36px;
+            font-size: 2.25rem;
         }
         .about__columnA-Title{
             display: none;
@@ -261,13 +297,28 @@ html {
             width: 80vw;
            
         }
+        .leadin{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+
+            p{
+                display: flex;
+                font-family: "Jost", sans-serif;
+                color: #F0D3F7;
+                font-size: 1.25rem;
+                margin-bottom: 40px;
+                margin-top: 80px;
+                font-weight: 400;
+            }
+        }
         .testimonials{
             @include fr;
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
             width: 100%;
-            margin-top: 80px;
             margin-bottom: 50px;
         }
         .testimonials__column{
@@ -289,7 +340,7 @@ html {
             justify-content: flex-end;
             align-items: flex-end;
             font-family: $font-01;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $color-02;
             padding-top: 30px;
             width: 100%;
@@ -566,7 +617,7 @@ html {
         display: flex;
         font-family: $font-01;
         color: $color-02;
-        font-size: 36px;
+        font-size: 2.25rem;
         margin-bottom: 2.7%;
         font-weight: 400;
     }    
@@ -585,13 +636,13 @@ html {
         display: flex;
         font-family: $font-01;
         color: $color-04;
-        font-size: 16px;
+        //font-size: 1rem;
         margin-bottom: 50px;
 
         a{
             text-decoration: none;
             font-family: $font-01;
-            font-size: 16px;
+            font-size: 1rem;
             color: $color-04;
             display:inline;
             font-weight: 300;
@@ -612,7 +663,7 @@ html {
         h4{
             margin: 0;
             font-weight: 300;
-            font-size: 16px;
+            //font-size: 1rem;
             ul>p{
                 margin-bottom: 0;
             }
@@ -629,7 +680,7 @@ html {
             @include flex100;
             justify-content: flex-end;
             font-family: $font-01;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $color-05;
             padding-top: 30px;
         }
@@ -660,7 +711,7 @@ html {
                 @include fr;
                 justify-content: flex-end;
                 font-family: $font-01;
-                font-size: 12px;
+                font-size: 0.857rem;
                 color: $color-04;
                 padding: 2%;
                 .livSiteLink{
@@ -673,7 +724,7 @@ html {
             display: flex;
             width: 33%;
             font-family: $font-01;
-            font-size: 16px;
+            font-size: 1rem;
             color:$color-01;
             font-weight: 300;
             line-height: 150%;
@@ -716,14 +767,17 @@ html {
 
 
     .footer{
-        @include fc;
+        @include fr;
         justify-content: center;
         align-items: center;
         font-family: $font-01;
-        font-size: 12px;
+        font-size: 0.857rem;
         color: $color-05;
         padding-bottom: 20px;
         width: 100%;
+        div{
+            padding-right: 5px;
+        }
     }
 }
 
@@ -838,6 +892,11 @@ and (min-width: 601px){
             .carouselContainer{
                 width: 88vw;
             }
+            .leadin{
+                p{
+                    margin-top:60px;
+                }
+            }
         }
         .caseStudy{
             .caseStudy__detail-splash{
@@ -935,8 +994,12 @@ and (min-width: 451px){
             .about__columnB-Title{
                 display: none;
             }
+            .leadin{
+                p{
+                    margin-top:60px;
+                }
+            }
             .testimonials{
-                margin-top: 40px;
                 height: auto;
             }
             .testimonials__column{
@@ -998,6 +1061,9 @@ and (min-width: 451px){
                     margin: 0;
                 }
             }
+        }
+        .footer{
+            @include fc;
         }
         
     }
@@ -1091,8 +1157,12 @@ and (min-width: 0px){
             .about__columnB-Title{
                 display: none;
             }
+            .leadin{
+                p{
+                    margin-top:60px;
+                }
+            }
             .testimonials{
-                margin-top: 40px;
                 height: auto;
             }
             .testimonials__column{
@@ -1195,7 +1265,7 @@ and (min-width: 0px){
                     margin: 0% 0;
                 }
             }
-            font-size: 16px;
+            font-size: 1rem;
         }
         .caseStudy__detail-flow{
             #c150_splash_desktop{
@@ -1206,10 +1276,7 @@ and (min-width: 0px){
             }
         }
         .footer{
-            text-align: center;
-            p{
-                margin: 0;
-            }
+            @include fc;
         }
 
     }

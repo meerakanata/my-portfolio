@@ -20,6 +20,10 @@ html {
   }
 }
 
+body {
+  font-size: 18px;
+}
+
 #root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,6 +69,45 @@ html {
 
 #root .swiper .swiper-pagination-bullet-active {
   background: #E3A164;
+}
+
+#root .swiper .swiper-button-next, #root .swiper .swiper-button-prev {
+  bottom: 60px;
+  z-index: 5000;
+}
+
+#root .swiper .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  top: 43%;
+  content: url("../public/Icons/ArrowLeft.svg");
+}
+
+#root .swiper .swiper-button-prev:hover {
+  content: url("../public/Icons/ArrowLeftHover.svg");
+}
+
+#root .swiper .swiper-button-prev:active {
+  content: url("../public/Icons/ArrowLeftPressed.svg");
+}
+
+#root .swiper .swiper-button-next {
+  width: 35px;
+  height: 35px;
+  top: 43%;
+  content: url("../public/Icons/ArrowRight.svg");
+}
+
+#root .swiper .swiper-button-disabled {
+  display: none;
+}
+
+#root .swiper .swiper-button-next:hover {
+  content: url("../public/Icons/ArrowRightHover.svg");
+}
+
+#root .swiper .swiper-button-next:active {
+  content: url("../public/Icons/ArrowRightPressed.svg");
 }
 
 #root .swiper .viewCaseButton {
@@ -339,7 +382,7 @@ html {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   color: #F0D3F7;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .App .home .about__columnA-Title {
@@ -361,6 +404,32 @@ html {
   width: 80vw;
 }
 
+.App .home .leadin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.App .home .leadin p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jost", sans-serif;
+  color: #F0D3F7;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  font-weight: 400;
+}
+
 .App .home .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,7 +447,6 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -421,7 +489,7 @@ html {
       -ms-flex-align: end;
           align-items: flex-end;
   font-family: "Jost", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #F0D3F7;
   padding-top: 30px;
   width: 100%;
@@ -801,7 +869,7 @@ html {
   display: flex;
   font-family: "Jost", sans-serif;
   color: #F0D3F7;
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-bottom: 2.7%;
   font-weight: 400;
 }
@@ -827,14 +895,13 @@ html {
   display: flex;
   font-family: "Jost", sans-serif;
   color: #A57982;
-  font-size: 16px;
   margin-bottom: 50px;
 }
 
 .App .caseStudy__detail-body a {
   text-decoration: none;
   font-family: "Jost", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #A57982;
   display: inline;
   font-weight: 300;
@@ -862,7 +929,6 @@ html {
 .App .caseStudy__detail-body h4 {
   margin: 0;
   font-weight: 300;
-  font-size: 16px;
 }
 
 .App .caseStudy__detail-body h4 ul > p {
@@ -887,7 +953,7 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: "Jost", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #FFFFFF;
   padding-top: 30px;
 }
@@ -958,7 +1024,7 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: "Jost", sans-serif;
-  font-size: 12px;
+  font-size: 0.857rem;
   color: #A57982;
   padding: 2%;
 }
@@ -973,7 +1039,7 @@ html {
   display: flex;
   width: 33%;
   font-family: "Jost", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #E3A164;
   font-weight: 300;
   line-height: 150%;
@@ -1036,10 +1102,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1047,10 +1113,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Jost", sans-serif;
-  font-size: 12px;
+  font-size: 0.857rem;
   color: #FFFFFF;
   padding-bottom: 20px;
   width: 100%;
+}
+
+.App .footer div {
+  padding-right: 5px;
 }
 
 @media (max-width: 873px) and (min-width: 769px) {
@@ -1176,6 +1246,9 @@ html {
   .App .home .carouselContainer {
     width: 88vw;
   }
+  .App .home .leadin p {
+    margin-top: 60px;
+  }
   .App .caseStudy .caseStudy__detail-splash .vitalInfo ul {
     margin: 0;
   }
@@ -1277,8 +1350,10 @@ html {
   .App .home .about__columnB-Title {
     display: none;
   }
+  .App .home .leadin p {
+    margin-top: 60px;
+  }
   .App .home .testimonials {
-    margin-top: 40px;
     height: auto;
   }
   .App .home .testimonials__column {
@@ -1347,6 +1422,15 @@ html {
   .App .caseStudy__detail-splash .vitalInfo ul {
     padding-left: 0;
     margin: 0;
+  }
+  .App .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1449,8 +1533,10 @@ html {
   .App .home .about__columnB-Title {
     display: none;
   }
+  .App .home .leadin p {
+    margin-top: 60px;
+  }
   .App .home .testimonials {
-    margin-top: 40px;
     height: auto;
   }
   .App .home .testimonials__column {
@@ -1544,7 +1630,7 @@ html {
     padding-left: 0;
   }
   .App .caseStudy__detail-body {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .App .caseStudy__detail-body ul {
     padding-left: 0;
@@ -1561,10 +1647,13 @@ html {
     display: flex;
   }
   .App .footer {
-    text-align: center;
-  }
-  .App .footer p {
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 export default function CarouselSF() {
   return (
@@ -16,7 +17,8 @@ export default function CarouselSF() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation
+        modules={[Navigation, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide> <img className="SF_Slide" src="./Images/SugarFlower/Carousel/Slide1.png" alt="slide 1"/></SwiperSlide>
