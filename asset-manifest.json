@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.71706c2a.css",
-    "main.js": "/static/js/main.27a4184f.js",
+    "main.css": "/static/css/main.2803317b.css",
+    "main.js": "/static/js/main.137c6679.js",
     "static/js/787.8a90b346.chunk.js": "/static/js/787.8a90b346.chunk.js",
     "index.html": "/index.html",
-    "main.71706c2a.css.map": "/static/css/main.71706c2a.css.map",
-    "main.27a4184f.js.map": "/static/js/main.27a4184f.js.map",
+    "static/media/ArrowLeft.svg": "/static/media/ArrowLeft.3f3b2438ab625037a33c.svg",
+    "static/media/ArrowLeftHover.svg": "/static/media/ArrowLeftHover.1e24dc5f3023ce1394d6.svg",
+    "static/media/ArrowLeftPressed.svg": "/static/media/ArrowLeftPressed.734fc4fefaa7c34355b4.svg",
+    "static/media/ArrowRightHover.svg": "/static/media/ArrowRightHover.26e932779a6ee3df835c.svg",
+    "static/media/ArrowRightPressed.svg": "/static/media/ArrowRightPressed.ccb8e6043bbe679d2852.svg",
+    "static/media/ArrowRight.svg": "/static/media/ArrowRight.b0f72cfa385e80a15706.svg",
+    "main.2803317b.css.map": "/static/css/main.2803317b.css.map",
+    "main.137c6679.js.map": "/static/js/main.137c6679.js.map",
     "787.8a90b346.chunk.js.map": "/static/js/787.8a90b346.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71706c2a.css",
-    "static/js/main.27a4184f.js"
+    "static/css/main.2803317b.css",
+    "static/js/main.137c6679.js"
   ]
 }
