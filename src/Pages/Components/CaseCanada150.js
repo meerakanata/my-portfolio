@@ -26,7 +26,6 @@ function CaseCanada150(props) {
           <ul type="none">
               <li>Client: Government of Canada</li>
               <li>Timing: 2017</li>
-              <li>Duration: 8 Months</li>
               <li>My Role: Product Owner/Account Director, Spotify</li>
           </ul>
         </div>

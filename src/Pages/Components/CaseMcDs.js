@@ -27,7 +27,6 @@ function CaseMcDs(props) {
           <ul type="none">
               <li>Client: McDonald's Canada</li>
               <li>Timing: 2016</li>
-              <li>Duration: 3 Months</li>
               <li>My Role: Product Owner/Account Director, Spotify</li>
           </ul>
         </div>

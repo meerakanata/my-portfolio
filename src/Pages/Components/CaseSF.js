@@ -28,7 +28,6 @@ function CaseSF(props) {
             <ul type="none">
                 <li>Client: Spec Work</li>
                 <li>Timing: 2022</li>
-                <li>Duration: 3 Months</li>
                 <li>My Role: UX/UI Designer</li>
             </ul>
           </div>

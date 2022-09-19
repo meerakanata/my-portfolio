@@ -28,7 +28,6 @@ function CaseJC(props) {
               <ul type="none">
                 <li>Client: Jason Clerk</li>
                 <li>Timing: 2021</li>
-                <li>Duration: 6 Months</li>
                 <li>My Role: Designer {"&"} Developer</li>
               </ul>
             </div>
