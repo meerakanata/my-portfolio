@@ -244,27 +244,27 @@ body {
   padding-right: 100px;
 }
 
-.App .contactBar__dnldButton:hover #pathC, .App .contactBar__dnldButton:hover #pathB {
+.App .contactBar__dnldButton-button:hover #pathC, .App .contactBar__dnldButton-button:hover #pathB {
   fill: #E3A164;
 }
 
-.App .contactBar__dnldButton:hover rect, .App .contactBar__dnldButton:hover #pathD {
+.App .contactBar__dnldButton-button:hover rect, .App .contactBar__dnldButton-button:hover #pathD {
   stroke: #E3A164;
 }
 
-.App .contactBar__dnldButton:active path#pathB {
+.App .contactBar__dnldButton-button:active path#pathB {
   fill: #28052b;
 }
 
-.App .contactBar__dnldButton:active path#pathC {
+.App .contactBar__dnldButton-button:active path#pathC {
   fill: #28052b;
 }
 
-.App .contactBar__dnldButton:active path#pathD {
+.App .contactBar__dnldButton-button:active path#pathD {
   stroke: #28052b;
 }
 
-.App .contactBar__dnldButton:active rect {
+.App .contactBar__dnldButton-button:active rect {
   fill: #E3A164;
   stroke: #E3A164;
 }

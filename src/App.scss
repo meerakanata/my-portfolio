@@ -208,7 +208,7 @@ body{
         margin-left: 100px;
         padding-right: 100px;
     }
-    .contactBar__dnldButton:hover{
+    .contactBar__dnldButton-button:hover{
         #pathC, #pathB {
             fill: $color-01;
         }
@@ -216,7 +216,7 @@ body{
             stroke: $color-01;   
         }
     }
-    .contactBar__dnldButton:active{
+    .contactBar__dnldButton-button:active{
 
         path#pathB {
             fill: $color-03;

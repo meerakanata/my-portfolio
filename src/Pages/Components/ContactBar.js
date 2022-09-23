@@ -10,9 +10,11 @@ function ContactBar() {
             <h4><a href="mailto:meera31kanata@gmail.com" className="contactBar__email">meera31kanata@gmail.com</a></h4>
             <a href="mailto:meera31kanata@gmail.com" className="contactBar__emailMobile"><EmailIcon className="contactBar__emailMobile-icon"/></a>
             <a id="LinkedInIcon" href="https://www.linkedin.com/in/meera-uxui/" target="_blank" rel="noreferrer" ><LinkedInLogo alt="LinkedIn logo" className="contactBar__child"/></a>
+            <div className="contactBar__dnldButton">
             <a href="./Resume/MeeraShah-Resume.pdf" download="MeeraShah-Resume">
-                <DownloadButton className="contactBar__dnldButton"/>
+                <DownloadButton className="contactBar__dnldButton-button"/>
             </a>
+            </div>
         </div>
         
     );
