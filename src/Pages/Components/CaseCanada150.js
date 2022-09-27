@@ -68,7 +68,7 @@ function CaseCanada150(props) {
       </div>
       <div className="caseStudy__detail-heading">Level Up</div>
       <div className="caseStudy__detail-body">
-        <h4>This project cemented several skills transferable to UX/UI Design:
+        <h4>This project cemented several skills transferable to Product Design:
           <p><span>Data-Driven Mindset</span> - A high-stakes project from the get-go, I was reminded of the importance of having sound data/insights to rely upon when making decisions. As a result, I continue to employ a data-driven mindset to minimize/eliminate guesswork or assumptions.</p>
           <p><span>Cross-Functional Collaboration</span> - This project truly gave me the freedom to learn how to work collaboratively with other teams at Spotify over several months. I learned the importance of understanding everyone’s goals and how to effectively prioritize within a larger group to ensure progress on the project as a whole.</p>
           <p><span>Innovation</span> - I was challenged by this project to go beyond the standardized solutions we might typically offer up to partners. While those other solutions worked well 95% of the time, and drove efficiencies in our work flow, this project allowed us to flex our innovation skills, leveraging Spotify{"'"}s varied offerings to deliver a completely original partnership.</p>
