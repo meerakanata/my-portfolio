@@ -58,7 +58,7 @@ function CaseSF(props) {
             </div>
         </div>
         <video controls muted height={500}>
-          <source src="./video/SugarFlower_prototype-vid_2x.mp4#t=0.1"/>
+          <source src="./video/NEWSugarFlower_prototype.mp4#t=0.1"/>
         </video>
         <div className="caseStudy__detail-heading">Outcomes</div>
         <div className="caseStudy__detail-body"><h4>The first phase of the project provided the opportunity to create a preliminary design solution. Prior to implementation, a working prototype can now be built off this initial design in order to begin user testing.</h4></div>
